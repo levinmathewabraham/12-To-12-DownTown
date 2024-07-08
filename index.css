@@ -9,6 +9,12 @@ header {
 .navbar {
     background-color: #F0E3CA;
 }
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .book-button {
     display: inline-block;
     background-color: ;
