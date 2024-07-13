@@ -39,12 +39,11 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.container{
+.about-main{
 display: flex;
 }
 .about{
     width: 50%;
-    
 }
 .about-content{
     text-align: center;
