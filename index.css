@@ -1,31 +1,23 @@
-body {
-    background-color: ;
 
-}
-
-header {
-    background-color: ;
-}
 
 .navbar {
     background-color: #F0E3CA;
 }
 
-.menu-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 .book-button {
     display: inline-block;
-    background-color: ;
+    background-color: #FF8303;
     color: black;
-    text-decoration: none;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
-.cover {
-    background-image: url();
+.home-background {
+    background-image: url(./images/cover-img2.jpg);
+    height: 100vh;
+}
+
+.home-content {
+    color: white;
 }
 
 .testimonials {
@@ -33,7 +25,7 @@ header {
 }
 
 .contact-heading {
-    text-align: center
+    text-align: center;
 }
 
 .address-div {
@@ -41,7 +33,7 @@ header {
 }
 
 footer {
-    background-color: ;
+    background-color: #F0E3CA;
     text-align: center;
     padding-top: 10px;
     bottom: 0;
