@@ -1,5 +1,6 @@
 body {
     background-color: ;
+
 }
 
 header {
@@ -46,3 +47,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.container{
+display: flex;
+}
+.about{
+    width: 50%;
+    
+}
+.about-content{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
