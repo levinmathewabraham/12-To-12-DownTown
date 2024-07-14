@@ -6,7 +6,6 @@
     height: 100%;
     background-image: url(./images/cover.jpg);
     background-size: cover;
-    filter: blur(3px);
     z-index: -1;
 }
 
@@ -14,18 +13,39 @@
     position: relative;
     z-index: 1;
     color: white;
+    background: rgba(50, 19, 19, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin:20px;
 }
 
 /* Header */
 .navbar {
-    background-color: #F0E3CA;
+    background-color: #321313;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #F4991A;
 }
 
 .book-button {
     display: inline-block;
     background-color: #FF8303;
-    color: black;
+    color: white;
     border-radius: 5px;
+}
+
+.book-button:hover {
+    background-color: #F4991A;
+    color: black;
 }
 
 /* Home Section */
@@ -36,6 +56,18 @@
 /* Testimonial Section */
 .testimonials {
     text-align: center;
+}
+
+.review-btn {
+    text-decoration: none;
+    background-color: #FF8303;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.review-btn:hover {
+    background-color: #F4991A;
 }
 
 /* About Section */
@@ -59,7 +91,8 @@
 
 /* Footer Section */
 footer {
-    background-color: #F0E3CA;
+    background-color: #321313;
+    color: white;
     text-align: center;
     padding-top: 10px;
     bottom: 0;
