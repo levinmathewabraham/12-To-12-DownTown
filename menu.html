@@ -6,283 +6,253 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-     
-    </script>
-    <script src="index.js">    
-
-  
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="index.css" rel="stylesheet">
-    <style>
-      
-     .m-div{
-        margin-top: 25%;
-        border: 3px solid #321313;
-        margin-bottom: 10%;
-
-      }
-      .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./images/cover.jpg);
-    background-size: cover;
-    z-index: -1;
-}
-h3{
-  color: white;
-}
-.custom-btn{
-  color: white;
-  background-color: #FF8303;
-}
-.custom-btn:focus-within{
-  color:black;
-  background-color: white;
-}
-
-
-
-.custom-btn:hover{
-  color: #F4991A;
-  background-color: black;
-}
-
-.card{
-  border:3px solid black;
-}
-
-    
-    </style>
+  
 </head>
 <body>
-    <!-- Header section begins -->
-    <section id="header-section">
-      <header>
-          <div class="container">
-              <nav class="navbar navbar-expand-md fixed-top">
-                  <!-- Navbar container begins -->
-                  <div class="container d-flex flex-column align-items-center">
-                      <!-- Restaurant logo -->
-                      <a class="navbar-brand" href="./index.html">12 To 12 DownTown</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <!-- Navbar menu items begin -->
-                      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                          <div class="menu-items">
-                              <ul class="navbar-nav nav nav-underline me-auto mb-2 mb-lg-0">
-                                  <li class="nav-item">
-                                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link active" href="menu.html">Menu</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="index.html">Testimonial</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="index.html">About</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="index.html">Contact</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link book-button" href="index.html">Book Table</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      <!-- Navbar menu items end -->
-                  </div>
-                  <!-- Navbar container ends -->
-              </nav>
-          </div>
-      </header>
-  </section>
-  <!-- Header section ends -->
-  <section id="menu-section">
-    <div class="background"></div>
-    <!--collapse begins-->
-    <div class="m-div col-md-4 mx-auto text-center">
-    <p class="menu-div">
-      <button class="btn custom-btn " type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3 multiCollapseExample4 multiCollapseExample5 multiCollapseExample6 multiCollapseExample7 multiCollapseExample8 multiCollapseExample9 multiCollapseExample10 multiCollapseExample11 multiCollapseExample12 multiCollapseExample13 multiCollapseExample14 multiCollapseExample15  ">all<br> items</button>
-      <a class="btn custom-btn " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" ><br>soups</a>
-      <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"><br>noodles</button>
-      <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3"><br>appetzers</button>
-      
-    </p>
-      <p class="menu-div">
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4"><br>salads</button>
-        <a class="btn custom-btn" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5"><br>breads</a>
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">mutton<br> curies</button>
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample7" aria-expanded="false" aria-controls="multiCollapseExample7">chinese <br>curries</button>
-        
-        
-      </p>
-      <p class="menu-div">
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample8" aria-expanded="false" aria-controls="multiCollapseExample8">rice<br> biriyani</button>
-        <a class="btn custom-btn" data-bs-toggle="collapse" href="#multiCollapseExample9" role="button" aria-expanded="false" aria-controls="multiCollapseExample9">chinese veg<br> curries</a>
-        <a class="btn custom-btn" data-bs-toggle="collapse" href="#multiCollapseExample10" role="button" aria-expanded="false" aria-controls="multiCollapseExample10">indian <br>curries</a>
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample11" aria-expanded="false" aria-controls="multiCollapseExample11">beef<br>variety</button>
-       
-       
-        
-      </p>
-      <p class="menu-div">
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample12" aria-expanded="false" aria-controls="multiCollapseExample12">sea food<br> special</button>
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample13" aria-expanded="false" aria-controls="multiCollapseExample13">indian veg<br>curries</button>
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample14" aria-expanded="false" aria-controls="multiCollapseExample14">down town<br>speaials</button>
-        <button class="btn custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample15" aria-expanded="false" aria-controls="multiCollapseExample15"><br>carcoal</button>
-      </p>
-    </div>
-    <div class="row">
-      <!--1st collapse begins-->
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample1">
-          <h3>SOUPS</h3>
-          <!--1st card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\seafoodsoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">SEAFOOD SOOUP</h5>
-              <p class="card-text">MRP: &#x20B9 150</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--1st card in collapse 1 ends-->
-
-          <!--2nd card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\tomyumsoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">TOM YUM</h5>
-              <p class="card-text">MRP: &#x20B9 120</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--2nd card in collapse 1 ends-->
-
-
-          <!--3rd card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\sweetcornsoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">SWEET CORN SOUP</h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--3rd card in collapse 1 ends-->
-
-           <!--4th card  in collapse 1 begins-->
-           <div class="card" style="width: 14rem;">
-            <img src="images\hotsoursoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HOT &amp;SOUR SOUP </h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--4th card in collapse 1 ends-->
-
-
-
-          <!--5th card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\lumpom.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">LUM POM SOUP </h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--5th card in collapse 1 ends-->
-
-
-          <!--6th card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\monchowsoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">MONCHOW SOUP</h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--6th card in collapse 1 ends-->
-
-          <!--7th card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\creamofchicken.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CREAM OF CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 120</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--7th card in collapse 1 ends-->
-
-           <!--8th card  in collapse 1 begins-->
-           <div class="card" style="width: 14rem;">
-            <img src="images\creamofmushroom.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CREAM OF MUSHROOM</h5>
-              <p class="card-text">MRP: &#x20B9 120</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--8th card in collapse 1 ends-->
-
-          <!--9th card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\clearsoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CLEAR SOUP VEG &amp; NON VEG</h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--9th card in collapse 1 ends-->
-
-
-          <!--10th card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\lemonsoup.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">LEMON SOUP </h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--10th card in collapse 1 ends-->
-
-
-          <!--11th card  in collapse 1 begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\creamoflemon.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CREAM OF LEMON SOUP </h5>
-              <p class="card-text">MRP: &#x20B9 120</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--11th card in collapse 1 ends-->
+   <!-- Header section begins -->
+   <section id="header-section">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md fixed-top">
+                <!-- Navbar container begins -->
+                <div class="container d-flex flex-column align-items-center">
+                    <!-- Restaurant logo -->
+                    <a class="navbar-brand" href="./index.html">12 To 12 DownTown</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navbar menu items begin -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <div class="menu-items">
+                            <ul class="navbar-nav nav nav-underline me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#menu-section">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Testimonial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link book-button" href="#">Book Table</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Navbar menu items end -->
+                     
+                </div>
+                <!-- Navbar container ends -->
+            </nav>
         </div>
+    </header>
+</section>
+<!-- Header section ends -->
+   <section id="sidebar" style="margin-top: 10rem;">
 
+   
+    <button class="btn custom-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <i class="fa-solid fa-bars"></i> Menu List
+    </button>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu card</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <!--1st collapse ends-->
+      <div class="offcanvas-body">
+       
+        
+          <ul class="menu " style="list-style: none;">
+            <li><button class="btn custom-btn " type="button" onclick="showhideall()">all items</button></li>
+            <li><a class="btn custom-btn " onclick="showhide(soup)">soups</a></li>
+            <li><button class="btn custom-btn" onclick="showhide(noodles)">noodles</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(appetzer)">appetzer</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(salads)">salads</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(breads)">breads</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(muttoncurries)">muttoncurries</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(chinesecurries)">chinesecurries</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(ricebiriyani)">ricebiriyani</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(chinsesvegcurries)">chinsesvegcurries</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(beefvariety)">beefvariety</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(seafoodspecial)">seafoodspecial</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(indianvegcurries)">indianvegcurries</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(downtownspeacial)">downtownspeacial</button></li>
+            <li><button class="btn custom-btn" onclick="showhide(charcoal)">charcoal</button></li>
+          </ul>
+        
+      </div>
+    </div>
+   </section>
+  <section id="menu-section">
+    <!--background img-->
+    <div class="background"></div>
+    <div class="row mx-auto" style="margin-top: 5rem;">
+      
+      
+                  <div class="row  items " id="soup" >
+                  
+                   <center> <h3 style="color: white;">SOUPS</h3></center>
 
+                    <!--1st card  in collapse 1 begins-->
+                    <div class="col-md-3">
+                    <div class="card" style="width: 14rem; ">
+                      <img src="images\seafoodsoup.png" class="card-img-fluid"  alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">SEAFOOD SOOUP</h5>
+                        <p class="card-text">MRP: &#x20B9 150</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--1st card in collapse 1 ends-->
+                    <div class="col-md-3">
+                    <!--2nd card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\tomyumsoup.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">TOM YUM</h5>
+                        <p class="card-text">MRP: &#x20B9 120</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--2nd card in collapse 1 ends-->
+          
+                    <div class="col-md-3">
+                    <!--3rd card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\sweetcornsoup.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">SWEET CORN SOUP</h5>
+                        <p class="card-text">MRP: &#x20B9 100</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--3rd card in collapse 1 ends-->
+                    <div class="col-md-3">
+                     <!--4th card  in collapse 1 begins-->
+                     <div class="card" style="width: 14rem;">
+                      <img src="images\hotsoursoup.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HOT &amp;SOUR SOUP </h5>
+                        <p class="card-text">MRP: &#x20B9 100</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--4th card in collapse 1 ends-->
+          
+          
+                    <div class="col-md-3">
+                    <!--5th card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\lumpom.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">LUM POM SOUP </h5>
+                        <p class="card-text">MRP: &#x20B9 100</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--5th card in collapse 1 ends-->
+          
+                    <div class="col-md-3">
+                    <!--6th card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\monchowsoup.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">MONCHOW SOUP</h5>
+                        <p class="card-text">MRP: &#x20B9 100</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    </div>
+                    <!--6th card in collapse 1 ends-->
+                    <div class="col-md-3">
+                    <!--7th card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\creamofchicken.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">CREAM OF CHICKEN</h5>
+                        <p class="card-text">MRP: &#x20B9 120</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    <!--7th card in collapse 1 ends-->
+                    </div>
+                    <div class="col-md-3">
+                     <!--8th card  in collapse 1 begins-->
+                     <div class="card" style="width: 14rem;">
+                      <img src="images\creamofmushroom.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">CREAM OF MUSHROOM</h5>
+                        <p class="card-text">MRP: &#x20B9 120</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    <!--8th card in collapse 1 ends-->
+                    </div>
+                    <div class="col-md-3">
+                    <!--9th card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\clearsoup.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">CLEAR SOUP VEG &amp; NON VEG</h5>
+                        <p class="card-text">MRP: &#x20B9 100</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    <!--9th card in collapse 1 ends-->
+                    </div>
+                    <div class="col-md-3">
+                    <!--10th card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\lemonsoup.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">LEMON SOUP </h5>
+                        <p class="card-text">MRP: &#x20B9 100</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    <!--10th card in collapse 1 ends-->
+                    </div>
+          
+                    <div class="col-md-3">
+                    <!--11th card  in collapse 1 begins-->
+                    <div class="card" style="width: 14rem;">
+                      <img src="images\creamoflemon.png" class="card-img-fluid" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">CREAM OF LEMON SOUP </h5>
+                        <p class="card-text">MRP: &#x20B9 120</p>
+                        <a href="#" class="btn custom-btn">order now!</a>
+                      </div>
+                    </div>
+                    <!--11th card in collapse 1 ends-->
+                    </div>
+                  
+                  </div>
 
-
-      <!--2nd collapse begins-->
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <h3>NOODLES</h3>
+                
+                <!--1st collapse ends-->
+                
+                <!--2nd collapse begins-->
+        
+        <div class="row  items " id="noodles">
+          <hr style=" border-top: 20px dotted #F4991A;">
+          <center><h3 style="color: white;">NOODLES</h3></center>
           <!--1st card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\chickennoodle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -291,11 +261,13 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--1st card in 2nd collapse ends-->
 
          
           
           <!--2nd card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\muttonnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -304,9 +276,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--2nd card in 2nd collapse ends-->
 
           <!--3rd card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\eggnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -315,9 +289,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--3rd card in 2nd collapse ends-->
 
           <!--4th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\vegnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -326,9 +302,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--4th card in 2nd collapse ends-->
 
           <!--5th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\mixnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -337,9 +315,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--5th card in 2nd collapse ends-->
 
           <!--6th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\SZECHUANNODDLE.PNG" class="card-img-top" alt="...">
             <div class="card-body">
@@ -348,10 +328,12 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--6th card in 2nd collapse ends-->
 
 
           <!--7th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\chickentikkanoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -360,10 +342,12 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--7th card in 2nd collapse ends-->
 
 
-           <!--7th card in 2nd collapse begin -->
+           <!--8th card in 2nd collapse begin -->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\singaporenoddles.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -372,10 +356,12 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
-          <!--7th card in 2nd collapse ends-->
+          </div>
+          <!--8th card in 2nd collapse ends-->
 
 
-          <!--8th card in 2nd collapse begin -->
+          <!--9th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\SHANGHINODDLES.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -384,9 +370,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
-          <!--8th card in 2nd collapse ends-->
+          </div>
+          <!--9th card in 2nd collapse ends-->
 
-          <!--9th card in 2nd collapse begin -->
+          <!--10th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\PRAWNNODDLES.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -395,10 +383,12 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
-          <!--9th card in 2nd collapse ends-->
+          </div>
+          <!--10th card in 2nd collapse ends-->
 
 
-          <!--10th card in 2nd collapse begin -->
+          <!--11th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\CHINESECHOPSUEY.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -407,9 +397,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
-          <!--10th card in 2nd collapse ends-->
+          </div>
+          <!--11th card in 2nd collapse ends-->
 
-          <!--11th card in 2nd collapse begin -->
+          <!--12th card in 2nd collapse begin -->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\AMERICANCHOPSUEY.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -418,680 +410,775 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
-          <!--11th card in 2nd collapse ends-->
+          </div>
+          <!--12th card in 2nd collapse ends-->
         </div>
-      </div>
+      
       <!--2nd collapse ends-->
 
-      <!--3rd collapse begins-->
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample3">
-          <h3>APPETZER</h3>
-          <!--1st card in 3rd collapse begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\chickenlolipop.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CHICKEN LOLIPOP</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--2nd card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">WALA CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--2nd card in 3rd collapse ends-->
-
-          <!--3rd card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\DOWN TOWN CHICKEN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">DOWN TOWN CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--3rd card in 3rd collapse ends-->
-
-           <!--4th card in 3rd collapse ends-->
-
-           <div class="card" style="width: 14rem;">
-            <img src="images\KETHEL CHICKEN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">KETHEL CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--4th card in 3rd collapse ends-->
-
-           <!--5th card in 3rd collapse ends-->
-
-           <div class="card" style="width: 14rem;">
-            <img src="images\CHICKENMAJESTIC.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CHICKEN MAJESTIC</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--5th card in 3rd collapse ends-->
-
-          <!--6th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\CRISPY FRIED CHICKEN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CRISPY FRIED CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--6th card in 3rd collapse ends-->
-
-           <!--7th card in 3rd collapse ends-->
-
-           <div class="card" style="width: 14rem;">
-            <img src="images\PANEER TIKKA.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">PANEER TIKKA</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--7th card in 3rd collapse ends-->
-
-          <!--8th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\HONEY GLAZE VEG.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HONEY GLAZE VEG</h5>
-              <p class="card-text">MRP: &#x20B9 220</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--8th card in 3rd collapse ends-->
-          
-          <!--9th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\CHICKEN MANGOLIAN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CHICKEN MANGOLIAN</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--9th card in 3rd collapse ends-->
-
-           <!--10th card in 3rd collapse ends-->
-
-           <div class="card" style="width: 14rem;">
-            <img src="images\KATHI CHICKEN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">KATHI CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--10th card in 3rd collapse ends-->
-
-          <!--11th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\PRAWNS MAJESTIC.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">PRAWNS MAJESTIC</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--11th card in 3rd collapse ends-->
-
-          <!--12th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\BAR BE QUE WINHS.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">BAR BE QUE WINHS</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--12th card in 3rd collapse ends-->
-
-          <!--13th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\HONEY GLAZE CHICKEN.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">HONEY GLAZE CHICKEN</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--13th card in 3rd collapse ends-->
-
-           <!--14th card in 3rd collapse ends-->
-
-           <div class="card" style="width: 14rem;">
-            <img src="images\PANEER PAKKODA.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">PANEER PAKKODA</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--14th card in 3rd collapse ends-->
-
-          <!--15th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\CHICKEN PAKKODA.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CHICKEN PAKKODA</h5>
-              <p class="card-text">MRP: &#x20B9 240</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--15th card in 3rd collapse ends-->
-
-          <!--15th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\ARABIC PRAWNS.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">ARABIC PRAWNS</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--15th card in 3rd collapse ends-->
-
-          <!--16th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\PEPPER FRIED PRAWNS.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">PEPPER FRIED PRAWNS</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--16th card in 3rd collapse ends-->
-
-          <!--17th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\GOLDERN FRIED PRAWNS.png.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">GOLDERN FRIED PRAWNS</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--17th card in 3rd collapse ends-->
-           <!--18th card in 3rd collapse ends-->
-
-           <div class="card" style="width: 14rem;">
-            <img src="images\FISH FINGERS.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">FISH FINGERS</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--18th card in 3rd collapse ends-->
-
-          <!--19th card in 3rd collapse ends-->
-
-          <div class="card" style="width: 14rem;">
-            <img src="images\CALAMARI.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CALAMARI</h5>
-              <p class="card-text">MRP: &#x20B9 340</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--19th card in 3rd collapse ends-->
-
-          
-
-        </div>
-        
-      </div>
-      <!--3rd collapse ends-->
-
-
-
-       <!--4th collapse begins-->
-       <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample4">
-          <h3>SALADS</h3>
-          <!--1st card in 4th collapse begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\MIXED VEG SALAD.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">MIXED VEG SALAD</h5>
-              <p class="card-text">MRP: &#x20B9 80</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--1st card in 4th collapse ends-->
-
-          <!--2nd card in 4th collapse begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\CUCUMBER SALAD.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CUCUMBER SALAD</h5>
-              <p class="card-text">MRP: &#x20B9 80</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--2nd card in 4th collapse ends-->
-
-          <!--3rd card in 4th collapse begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\GREEN SALAD.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">GREEN SALAD</h5>
-              <p class="card-text">MRP: &#x20B9 80</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--3rd card in 4th collapse ends-->
-          <!--4th card in 4th collapse begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\RUSSIAN SALAD.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">RUSSIAN SALAD</h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--4th card in 4th collapse ends-->
-          <!--5th card in 4th collapse begins-->
-          <div class="card" style="width: 14rem;">
-            <img src="images\CHICKEN HAWAIIAN SALAD.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CHICKEN HAWAIIAN SALAD</h5>
-              <p class="card-text">MRP: &#x20B9 100</p>
-              <a href="#" class="btn custom-btn">order now!</a>
-            </div>
-          </div>
-          <!--5th card in 4th collapse ends-->
-
-        </div>
-        
-      </div>
-      <!--4th collapse ends-->
-    
-    
-    
-    <div class="row">
-    <!--5th collapse begins-->
-    <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample5">
-        <h3>BREADS</h3>
-        <!--1st card in 5th collapse begins-->
+        <!--3rd collapse begins-->
+       
+      <div class="row items" id="appetzer">
+        <hr style=" border-top: 20px dotted #F4991A;">
+        <center><h3 style="color: white;">APPETZER</h3></center>
+        <!--1st card in 3rd collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
-          <img src="images\TANDOORI ROTI.png" class="card-img-top" alt="...">
+          <img src="images\chickenlolipop.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">TANDOORI ROTI</h5>
-            <p class="card-text">MRP: &#x20B9 25</p>
+            <h5 class="card-title">CHICKEN LOLIPOP</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
-        <!--1st card in 5th collapse ends-->
+        </div>
+        <!--1st card in 3rd collapse ends-->
 
-         <!--2nd card in 5th collapse begins-->
-         <div class="card" style="width: 14rem;">
-          <img src="images\NAAN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">NAAN</h5>
-            <p class="card-text">MRP: &#x20B9 25</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--2nd card in 5th collapse ends-->
-
-        <!--3rd card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\GARLIC NAAN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">GARLIC NAAN</h5>
-            <p class="card-text">MRP: &#x20B9 30</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--3rd card in 5th collapse ends-->
-
-        <!--4th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\BUTTER NAAN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">BUTTER NAAN</h5>
-            <p class="card-text">MRP: &#x20B9 30</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--4th card in 5th collapse ends-->
-
-        <!--5th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHEESE NAAN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHEESE NAAN</h5>
-            <p class="card-text">MRP: &#x20B9 35</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--5th card in 5th collapse ends-->
-
-        <!--6th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\ALOO KULCHA.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">ALOO KULCHA</h5>
-            <p class="card-text">MRP: &#x20B9 35</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--6th card in 5th collapse ends-->
-
-        <!--7th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\VEG KULCHA.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">VEG KULCHA</h5>
-            <p class="card-text">MRP: &#x20B9 35</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--7th card in 5th collapse ends-->
-
-        <!--8th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\TANDOORI PARATHA.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">TANDOORI PARATHA</h5>
-            <p class="card-text">MRP: &#x20B9 30</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--8th card in 5th collapse ends-->
-         <!--9th card in 5th collapse begins-->
-         <div class="card" style="width: 14rem;">
-          <img src="images\keemanaan.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">KHEEMA NAAN</h5>
-            <p class="card-text">MRP: &#x20B9 55</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--9th card in 5th collapse ends-->
-
-        <!--10th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHAPPATHI.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHAPPATHI</h5>
-            <p class="card-text">MRP: &#x20B9 15</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--10th card in 5th collapse ends-->
-
-        <!--11th card in 5th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\KERALA POROTTA.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">KERALA POROTTA</h5>
-            <p class="card-text">MRP: &#x20B9 18</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--11th card in 5th collapse ends-->
-      </div>
-     </div>
-     <!--5th collapse ends-->
-
-
-     <!--6th collapse begins-->
-     <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample6">
-        <h3>MUTTON CURRIES</h3>
-        <!--1st card in 6th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\MUTTON JALFREZI.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MUTTON JALFREZI</h5>
-            <p class="card-text">MRP: &#x20B9 350</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--1st card in 6th collapse ends-->
-
-        <!--2nd card in 6th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\MUTTON VINDALOO.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MUTTON VINDALOO</h5>
-            <p class="card-text">MRP: &#x20B9 350</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--2nd card in 6th collapse ends-->
-
-        <!--3rd card in 6th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\MUTTON DOPIAZA.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MUTTON DOPIAZA</h5>
-            <p class="card-text">MRP: &#x20B9 350</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--3rd card in 6th collapse ends-->
-
-        <!--4th card in 6th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\MUTTON ROBAN JOSH.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MUTTON ROBAN JOSH</h5>
-            <p class="card-text">MRP: &#x20B9 350</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--4th card in 6th collapse ends-->
-
-        <!--5th card in 6th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\MUTTON MASALA.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MUTTON MASALA</h5>
-            <p class="card-text">MRP: &#x20B9 350</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--5th card in 6th collapse ends-->
-
-        <!--6th card in 6th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\MUTTON PEPPER FRY.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">MUTTON PEPPER FRY</h5>
-            <p class="card-text">MRP: &#x20B9 350</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--6th card in 6th collapse ends-->
-      </div>
-     </div>
-     <!--6th collapse ends-->
-
-     <!--7th collapse begins-->
-     <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample7">
-        <h3>CHINESE CURRIES</h3>
-        <!--1st card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHILLY CHICKEN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHILLY CHICKENP</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--1st card in 7th collapse ends-->
-
-        <!--2nd card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\SCHEZWAN CHICKEN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SCHEZWAN CHICKEN</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--2nd card in 7th collapse ends-->
-
-        <!--3rd card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHICKEN IN HOT CHILLY SAUCE.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHICKEN IN HOT CHILLY SAUCE</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--3rd card in 7th collapse ends-->
-
-        <!--4th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\SLICED CHICKEN WITH MUSHROOM.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">SLICED CHICKEN WITH MUSHROOM BAMBOO SHOOT</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--4th card in 7th collapse ends-->
-
-        <!--5th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\DEVIL CHICKEN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">DEVIL CHICKEN</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--5th card in 7th collapse ends-->
-        <!--6th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHICKEN IN OYSTER SAUCE.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHICKEN IN OYSTER SAUCE</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--6th card in 7th collapse ends-->
-
-        <!--7th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHICKEN IN SWEET GARLIC SAUCE.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CHICKEN IN SWEET GARLIC SAUCE</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--7th card in 7th collapse ends-->
-
-         <!--8th card in 7th collapse begins-->
-         <div class="card" style="width: 14rem;">
-          <img src="images\PINEAPPLE CHICKEN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PINEAPPLE CHICKEN</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--8th card in 7th collapse ends-->
-
-        <!--9th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\EGG CHILLY.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">EGG CHILLY</h5>
-            <p class="card-text">MRP: &#x20B9 160</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--9th card in 7th collapse ends-->
-
-        <!--10th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\GARLIC CHICKEN.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">GARLIC CHICKEN</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
-            <a href="#" class="btn custom-btn">order now!</a>
-          </div>
-        </div>
-        <!--10th card in 7th collapse ends-->
-
-        <!--11th card in 7th collapse begins-->
+        <!--2nd card in 3rd collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">GINGER CHICKEN</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
+            <h5 class="card-title">WALA CHICKEN</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
-        <!--11th card in 7th collapse ends-->
+        </div>
+        <!--2nd card in 3rd collapse ends-->
 
-        <!--12th card in 7th collapse begins-->
+        <!--3rd card in 3rd collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
-          <img src="images\CHICKEN MANCHURIAN.png" class="card-img-top" alt="...">
+          <img src="images\DOWN TOWN CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">CHICKEN MANCHURIAN</h5>
-            <p class="card-text">MRP: &#x20B9 230</p>
+            <h5 class="card-title">DOWN TOWN CHICKEN</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
-        <!--12th card in 7th collapse ends-->
+        </div>
+        <!--3rd card in 3rd collapse ends-->
 
-        <!--13th card in 7th collapse begins-->
-        <div class="card" style="width: 14rem;">
-          <img src="images\CHILLY FISH.png" class="card-img-top" alt="...">
+         <!--4th card in 3rd collapse begins-->
+        <div class="col-md-3">
+         <div class="card" style="width: 14rem;">
+          <img src="images\KETHEL CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">CHILLY FISH</h5>
-            <p class="card-text">MRP: &#x20B9 320</p>
+            <h5 class="card-title">KETHEL CHICKEN</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
-        <!--13th card in 7th collapse ends-->
+        </div>
+        <!--4th card in 3rd collapse ends-->
+
+         <!--5th card in 3rd collapse begins-->
+        <div class="col-md-3">
+         <div class="card" style="width: 14rem;">
+          <img src="images\CHICKENMAJESTIC.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CHICKEN MAJESTIC</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--5th card in 3rd collapse ends-->
+
+        <!--6th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\CRISPY FRIED CHICKEN.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CRISPY FRIED CHICKEN</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--6th card in 3rd collapse ends-->
+
+         <!--7th card in 3rd collapse begins-->
+        <div class="col-md-3">
+         <div class="card" style="width: 14rem;">
+          <img src="images\PANEER TIKKA.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PANEER TIKKA</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--7th card in 3rd collapse ends-->
+
+        <!--8th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\HONEY GLAZE VEG.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HONEY GLAZE VEG</h5>
+            <p class="card-text">MRP: &#x20B9 220</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--8th card in 3rd collapse ends-->
+        
+        <!--9th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\CHICKEN MANGOLIAN.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CHICKEN MANGOLIAN</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--9th card in 3rd collapse ends-->
+
+         <!--10th card in 3rd collapse begins-->
+        <div class="col-md-3">
+         <div class="card" style="width: 14rem;">
+          <img src="images\KATHI CHICKEN.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">KATHI CHICKEN</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--10th card in 3rd collapse ends-->
+
+        <!--11th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\PRAWNS MAJESTIC.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PRAWNS MAJESTIC</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--11th card in 3rd collapse ends-->
+
+        <!--12th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\BAR BE QUE WINHS.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BAR BE QUE WINHS</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--12th card in 3rd collapse ends-->
+
+        <!--13th card in 3rd collapse beings-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\HONEY GLAZE CHICKEN.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HONEY GLAZE CHICKEN</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--13th card in 3rd collapse ends-->
+
+         <!--14th card in 3rd collapse begins-->
+        <div class="col-md-3">
+         <div class="card" style="width: 14rem;">
+          <img src="images\PANEER PAKKODA.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PANEER PAKKODA</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--14th card in 3rd collapse ends-->
+
+        <!--15th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\CHICKEN PAKKODA.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CHICKEN PAKKODA</h5>
+            <p class="card-text">MRP: &#x20B9 240</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--15th card in 3rd collapse ends-->
+
+        <!--16th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\ARABIC PRAWNS.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ARABIC PRAWNS</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--16th card in 3rd collapse ends-->
+
+        <!--17th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\PEPPER FRIED PRAWNS.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PEPPER FRIED PRAWNS</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--17th card in 3rd collapse ends-->
+
+        <!--18th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\GOLDERN FRIED PRAWNS.png.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GOLDERN FRIED PRAWNS</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--18th card in 3rd collapse ends-->
+         <!--19th card in 3rd collapse begins-->
+        <div class="col-md-3">
+         <div class="card" style="width: 14rem;">
+          <img src="images\FISH FINGERS.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FISH FINGERS</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--19th card in 3rd collapse ends-->
+
+        <!--20th card in 3rd collapse begins-->
+        <div class="col-md-3">
+        <div class="card" style="width: 14rem;">
+          <img src="images\CALAMARI.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CALAMARI</h5>
+            <p class="card-text">MRP: &#x20B9 340</p>
+            <a href="#" class="btn custom-btn">order now!</a>
+          </div>
+        </div>
+        </div>
+        <!--20th card in 3rd collapse ends-->
+
+        
+
       </div>
-     </div>
-     <!--7th collapse ends-->
+      
+    
+    <!--3rd collapse ends-->
+    <!--4th collapse begins-->
+    
+    <div class="row items" id="salads">
+      <hr style=" border-top: 20px dotted #F4991A;">
+      <center><h3 style="color: white;"> SALADS</h3></center>
+      <!--1st card in 4th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MIXED VEG SALAD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MIXED VEG SALAD</h5>
+          <p class="card-text">MRP: &#x20B9 80</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--1st card in 4th collapse ends-->
 
-     <!--8th collapse begins-->
-     <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample8">
-        <h3>RICE BIRIYANI</h3>
+      <!--2nd card in 4th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CUCUMBER SALAD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CUCUMBER SALAD</h5>
+          <p class="card-text">MRP: &#x20B9 80</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--2nd card in 4th collapse ends-->
+
+      <!--3rd card in 4th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\GREEN SALAD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GREEN SALAD</h5>
+          <p class="card-text">MRP: &#x20B9 80</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--3rd card in 4th collapse ends-->
+      <!--4th card in 4th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\RUSSIAN SALAD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">RUSSIAN SALAD</h5>
+          <p class="card-text">MRP: &#x20B9 100</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--4th card in 4th collapse ends-->
+      <!--5th card in 4th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHICKEN HAWAIIAN SALAD.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHICKEN HAWAIIAN SALAD</h5>
+          <p class="card-text">MRP: &#x20B9 100</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--5th card in 4th collapse ends-->
+
+    </div>
+    
+  
+  <!--4th collapse ends-->
+  <!--5th collapse begins-->
+    
+    <div class="row items" id="breads">
+      <hr style=" border-top: 20px dotted #F4991A;">
+      <center><h3 style="color: white;"> BREADS</h3></center>
+      <!--1st card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\TANDOORI ROTI.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TANDOORI ROTI</h5>
+          <p class="card-text">MRP: &#x20B9 25</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--1st card in 5th collapse ends-->
+
+       <!--2nd card in 5th collapse begins-->
+       <div class="col-md-3">
+       <div class="card" style="width: 14rem;">
+        <img src="images\NAAN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NAAN</h5>
+          <p class="card-text">MRP: &#x20B9 25</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--2nd card in 5th collapse ends-->
+
+      <!--3rd card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\GARLIC NAAN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GARLIC NAAN</h5>
+          <p class="card-text">MRP: &#x20B9 30</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--3rd card in 5th collapse ends-->
+
+      <!--4th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\BUTTER NAAN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">BUTTER NAAN</h5>
+          <p class="card-text">MRP: &#x20B9 30</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--4th card in 5th collapse ends-->
+
+      <!--5th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHEESE NAAN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHEESE NAAN</h5>
+          <p class="card-text">MRP: &#x20B9 35</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--5th card in 5th collapse ends-->
+
+      <!--6th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\ALOO KULCHA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ALOO KULCHA</h5>
+          <p class="card-text">MRP: &#x20B9 35</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--6th card in 5th collapse ends-->
+
+      <!--7th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\VEG KULCHA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">VEG KULCHA</h5>
+          <p class="card-text">MRP: &#x20B9 35</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--7th card in 5th collapse ends-->
+
+      <!--8th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\TANDOORI PARATHA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TANDOORI PARATHA</h5>
+          <p class="card-text">MRP: &#x20B9 30</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--8th card in 5th collapse ends-->
+       <!--9th card in 5th collapse begins-->
+       <div class="col-md-3">
+       <div class="card" style="width: 14rem;">
+        <img src="images\keemanaan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">KHEEMA NAAN</h5>
+          <p class="card-text">MRP: &#x20B9 55</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--9th card in 5th collapse ends-->
+
+      <!--10th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHAPPATHI.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHAPPATHI</h5>
+          <p class="card-text">MRP: &#x20B9 15</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--10th card in 5th collapse ends-->
+
+      <!--11th card in 5th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\KERALA POROTTA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">KERALA POROTTA</h5>
+          <p class="card-text">MRP: &#x20B9 18</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--11th card in 5th collapse ends-->
+    </div>
+   
+   <!--5th collapse ends-->
+   <!--6th collapse begins-->
+   
+   
+    <div class="row items" id="muttoncurries">
+      <hr style=" border-top: 20px dotted #F4991A;">
+      <center><h3 style="color: white;">MUTTON CURRIES</h3></center>
+      <!--1st card in 6th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MUTTON JALFREZI.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MUTTON JALFREZI</h5>
+          <p class="card-text">MRP: &#x20B9 350</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--1st card in 6th collapse ends-->
+
+      <!--2nd card in 6th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MUTTON VINDALOO.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MUTTON VINDALOO</h5>
+          <p class="card-text">MRP: &#x20B9 350</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--2nd card in 6th collapse ends-->
+
+      <!--3rd card in 6th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MUTTON DOPIAZA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MUTTON DOPIAZA</h5>
+          <p class="card-text">MRP: &#x20B9 350</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--3rd card in 6th collapse ends-->
+
+      <!--4th card in 6th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MUTTON ROBAN JOSH.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MUTTON ROBAN JOSH</h5>
+          <p class="card-text">MRP: &#x20B9 350</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--4th card in 6th collapse ends-->
+
+      <!--5th card in 6th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MUTTON MASALA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MUTTON MASALA</h5>
+          <p class="card-text">MRP: &#x20B9 350</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--5th card in 6th collapse ends-->
+
+      <!--6th card in 6th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\MUTTON PEPPER FRY.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MUTTON PEPPER FRY</h5>
+          <p class="card-text">MRP: &#x20B9 350</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--6th card in 6th collapse ends-->
+    </div>
+   
+   <!--6th collapse ends-->
+   <!--7th collapse begins-->
+   
+   
+    <div class="row items" id="chinesecurries">
+      <hr style=" border-top: 20px dotted #F4991A;">
+      <center><h3 style="color: white;">CHINESE CURRIES</h3></center>
+      <!--1st card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHILLY CHICKEN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHILLY CHICKENP</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--1st card in 7th collapse ends-->
+
+      <!--2nd card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\SCHEZWAN CHICKEN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SCHEZWAN CHICKEN</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--2nd card in 7th collapse ends-->
+
+      <!--3rd card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHICKEN IN HOT CHILLY SAUCE.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHICKEN IN HOT CHILLY SAUCE</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--3rd card in 7th collapse ends-->
+
+      <!--4th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\SLICED CHICKEN WITH MUSHROOM.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SLICED CHICKEN WITH MUSHROOM BAMBOO SHOOT</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--4th card in 7th collapse ends-->
+
+      <!--5th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\DEVIL CHICKEN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DEVIL CHICKEN</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--5th card in 7th collapse ends-->
+      <!--6th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHICKEN IN OYSTER SAUCE.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHICKEN IN OYSTER SAUCE</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--6th card in 7th collapse ends-->
+
+      <!--7th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHICKEN IN SWEET GARLIC SAUCE.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHICKEN IN SWEET GARLIC SAUCE</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--7th card in 7th collapse ends-->
+
+       <!--8th card in 7th collapse begins-->
+       <div class="col-md-3">
+       <div class="card" style="width: 14rem;">
+        <img src="images\PINEAPPLE CHICKEN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PINEAPPLE CHICKEN</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--8th card in 7th collapse ends-->
+
+      <!--9th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\EGG CHILLY.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">EGG CHILLY</h5>
+          <p class="card-text">MRP: &#x20B9 160</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--9th card in 7th collapse ends-->
+
+      <!--10th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\GARLIC CHICKEN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GARLIC CHICKEN</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--10th card in 7th collapse ends-->
+
+      <!--11th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">GINGER CHICKEN</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--11th card in 7th collapse ends-->
+
+      <!--12th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHICKEN MANCHURIAN.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHICKEN MANCHURIAN</h5>
+          <p class="card-text">MRP: &#x20B9 230</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--12th card in 7th collapse ends-->
+
+      <!--13th card in 7th collapse begins-->
+      <div class="col-md-3">
+      <div class="card" style="width: 14rem;">
+        <img src="images\CHILLY FISH.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CHILLY FISH</h5>
+          <p class="card-text">MRP: &#x20B9 320</p>
+          <a href="#" class="btn custom-btn">order now!</a>
+        </div>
+      </div>
+      </div>
+      <!--13th card in 7th collapse ends-->
+    </div>
+   
+
+   <!--7th collapse ends-->
+
+    <!--8th collapse begins-->
+    
+    
+      <div class="row items" id="ricebiriyani">
+        <hr style=" border-top: 20px dotted #F4991A;">
+        <center><h3 style="color: white;">RICE BIRIYANI</h3></center>
         <!--1st card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\KARACHI BIRIYANI.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1100,8 +1187,10 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--1st card in 8th collapse ends-->
         <!--2nd card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\PRAWNS FRIED ICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1110,8 +1199,10 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--2nd card in 8th collapse ends-->
         <!--3rd card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN FROED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1120,9 +1211,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--3rd card in 8th collapse ends-->
 
         <!--4th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\EGGVEGFRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1131,9 +1224,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--4th card in 8th collapse ends-->
 
         <!--5th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\MIXED FRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1142,9 +1237,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--5th card in 8th collapse ends-->
 
         <!--6th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\SZECHUAN FRIED ICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1153,9 +1250,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--6th card in 8th collapse ends-->
 
         <!--7th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\SIGNAPORE FRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1164,9 +1263,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--7th card in 8th collapse ends-->
 
         <!--8th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\SHANGHAI FRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1175,9 +1276,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--8th card in 8th collapse ends-->
 
         <!--9th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\KASMIRI PULAD.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1186,9 +1289,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--9th card in 8th collapse ends-->
 
         <!--10th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CASHEWNUT PULAD.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1197,9 +1302,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--10th card in 8th collapse ends-->
 
         <!--11th card in 8th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN BIRIYANI.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1208,9 +1315,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--11th card in 8th collapse ends-->
 
          <!--12th card in 8th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\BBQ BIRIYANI.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1219,20 +1328,19 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--12th card in 8th collapse ends-->
       </div>
-     </div>
+      
      <!--8th collapse ends-->
-
-  </div>  
-
-   
+      <!--9th collapse begins-->
+      
     
-    <!--9th collapse begins-->
-    <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample9">
-        <h3>CHINESE VEG CURRIES</h3>
+      <div class="row items" id="chinsesvegcurries">
+        <hr style=" border-top: 20px dotted #F4991A;">
+        <center><h3 style="color: white;">CHINESE VEG CURRIES</h3></center>
         <!--1st card in 9th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\GOBI MANCHURIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1241,9 +1349,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--1st card in 9th collapse ends-->
 
          <!--2nd card in 9th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\CHILLY GOPI.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1252,9 +1362,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--2nd card in 9th collapse ends-->
 
          <!--3rd card in 9th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\PANEER CHILLY.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1263,9 +1375,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--3rd card in 9th collapse ends-->
 
         <!--4th card in 9th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\MUSHROOM CHILLY.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1274,9 +1388,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--4th card in 9th collapse ends-->
 
          <!--5th card in 9th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\MUSHROOM MANCHURIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1285,9 +1401,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--5th card in 9th collapse ends-->
 
         <!--6th card in 9th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\PANEER MANCHURIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1296,17 +1414,19 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--6th card in 9th collapse ends-->
       </div>
-     </div>
+     
      <!--9th collapse ends-->
-
-  
-     <!--10th collapse begins-->
-     <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample10">
-        <h3>INDIAN CURRIES</h3>
+    <!--10th collapse begins-->
+            
+     
+      <div class="row items" id="indiancurries">
+        <hr style=" border-top: 20px dotted #F4991A;">
+        <center><h3 style="color: white;">INDIAN CURRIES</h3></center>
         <!--1st card in 10th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\BUTTER CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1315,9 +1435,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--1st card in 10th collapse ends-->
 
         <!--2nd card in 10th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN ROGAN JOSH.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1326,9 +1448,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--2nd card in 10th collapse ends-->
 
         <!--3rd card in 10th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN JAFREZI.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1337,9 +1461,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--3rd card in 10th collapse ends-->
 
          <!--4th card in 10th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN DOPIAZA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1348,9 +1474,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--4th card in 10th collapse ends-->
 
         <!--5th card in 10th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN PALAK.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1359,9 +1487,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--5th card in 10th collapse ends-->
 
          <!--6th card in 10th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\EGG MASALA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1370,9 +1500,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--6th card in 10th collapse ends-->
 
         <!--7th card in 10th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\AFGENI CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1381,9 +1513,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--7th card in 10th collapse ends-->
 
         <!--8th card in 10th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\PANJABI CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1392,9 +1526,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--8th card in 10th collapse ends-->
 
          <!--9th card in 10th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\CHIKKEN TIKKA MASALA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1403,9 +1539,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--9th card in 10th collapse ends-->
 
           <!--10th card in 10th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\CHETTINAD.PNG" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1414,9 +1552,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--10th card in 10th collapse ends-->
 
          <!--11th card in 10th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\HYDERABADI.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1425,9 +1565,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--11th card in 10th collapse ends-->
         
          <!--12th card in 10th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\CHICKEN MAHARAJA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1436,16 +1578,19 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--12th card in 10th collapse ends-->
       </div>
-     </div>
+      
      <!--10th collapse ends-->
-
      <!--11th collapse begins-->
-     <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample11">
-        <h3>BEEF VARITEY</h3>
+     
+    
+      <div class="row items" id="beefvariety">
+        <hr style=" border-top: 20px dotted #F4991A;">
+        <center><h3 style="color: white;">BEEF VARITEY</h3></center>
         <!--1st card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\BEEF PEPPER FRY.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1454,9 +1599,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--1st card in 11th collapse ends-->
 
         <!--2nd card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CHILLY BEEF.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1465,9 +1612,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--2nd card in 11th collapse ends-->
 
         <!--3rd card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\BEEF ROAST.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1476,9 +1625,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--3rd card in 11th collapse ends-->
 
         <!--4th card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\MEXICAN BEEF.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1487,9 +1638,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--4th card in 11th collapse ends-->
 
          <!--5th card in 11th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\BEEF IN OYSTER SAUCE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1498,9 +1651,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--5th card in 11th collapse ends-->
 
         <!--6th card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\beef.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1509,9 +1664,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--6th card in 11th collapse ends-->
 
          <!--7th card in 11th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\BEEF CHILLY PEPPER.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1520,9 +1677,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--7th card in 11th collapse ends-->
 
         <!--8th card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\BEEF MANGOLIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1531,9 +1690,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--8th card in 11th collapse ends-->
 
          <!--9th card in 11th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\BEEF DRY FRY.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1542,9 +1703,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--9th card in 11th collapse ends-->
 
         <!--10th card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\SLICED BEEF WITH MUSHROOM.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1553,9 +1716,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--10th card in 11th collapse ends-->
 
         <!--11th card in 11th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\BEEF IN BLACK BEAN SAUCE.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1564,16 +1729,19 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--11th card in 11th collapse ends-->
       </div>
-     </div>
+      
      <!--11th collapse ends-->
-
      <!--12th collapse begins-->
-     <div class="col">
-      <div class="collapse multi-collapse" id="multiCollapseExample12">
-        <h3>SEA FOOD SPEACIALS</h3>
+     
+    
+      <div class="row items" id="seafoodspecial">
+        <hr style=" border-top: 20px dotted #F4991A;">
+       <center> <h3 style="color: white;">SEA FOOD SPEACIALS</h3></center>
         <!--1st card in 12th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\PRAWNS FRYTAWA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1582,9 +1750,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--1st card in 12th collapse ends-->
 
          <!--2nd card in 12th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\MIX SEAFOOD GRILL.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1593,9 +1763,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--2nd card in 12th collapse ends-->
 
          <!--3rd card in 12th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\FISH FRYTAWA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1604,9 +1776,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--3rd card in 12th collapse ends-->
 
         <!--4th card in 12th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\CRAB.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1615,9 +1789,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--4th card in 12th collapse ends-->
 
         <!--5th card in 12th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\BABY OCTOPUS.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1626,9 +1802,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--5th card in 12th collapse ends-->
 
         <!--6th card in 12th collapse begins-->
+        <div class="col-md-3">
         <div class="card" style="width: 14rem;">
           <img src="images\GRILLED FISH.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1637,9 +1815,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--6th card in 12th collapse ends-->
 
          <!--7th card in 12th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\MUSSELS.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1648,9 +1828,11 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
+        </div>
         <!--7th card in 12th collapse ends-->
 
-         <!--7th card in 12th collapse begins-->
+         <!--8th card in 12th collapse begins-->
+         <div class="col-md-3">
          <div class="card" style="width: 14rem;">
           <img src="images\SQUID.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -1659,16 +1841,19 @@ h3{
             <a href="#" class="btn custom-btn">order now!</a>
           </div>
         </div>
-        <!--7th card in 12th collapse ends-->
+        </div>
+        <!--8th card in 12th collapse ends-->
       </div>
-     </div>
-     <!--12th collapse ends-->
      
-      <!--13th collapse begins-->
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample13">
-          <h3>INDIAN VEG CURRIES</h3>
+     <!--12th collapse ends-->
+            <!--13th collapse begins-->
+            
+      
+        <div class="row items" id="indianvegcurries">
+          <hr style=" border-top: 20px dotted #F4991A;">
+          <center><h3 style="color: white;">INDIAN VEG CURRIES</h3></center>
           <!--1st card in 13th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\PANEER BUTTER MASALA.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1677,9 +1862,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--1st card in 13th collapse ends-->
 
            <!--2nd card in 13th collapse begins-->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\PANEER KOFTA CURRY.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1688,9 +1875,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--2nd card in 13th collapse ends-->
 
             <!--3rd card in 13th collapse begins-->
+            <div class="col-md-3">
             <div class="card" style="width: 14rem;">
               <img src="images\MIXED VEG KORMA.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -1699,9 +1888,11 @@ h3{
                 <a href="#" class="btn custom-btn">order now!</a>
               </div>
             </div>
+            </div>
             <!--3rd card in 13th collapse ends-->
 
              <!--4th card in 13th collapse begins-->
+             <div class="col-md-3">
              <div class="card" style="width: 14rem;">
               <img src="images\ALPP GOPI MASALA.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -1710,9 +1901,11 @@ h3{
                 <a href="#" class="btn custom-btn">order now!</a>
               </div>
             </div>
+            </div>
             <!--4th card in 13th collapse ends-->
 
             <!--5th card in 13th collapse begins-->
+            <div class="col-md-3">
             <div class="card" style="width: 14rem;">
               <img src="images\MUSHROOM MUTTER MASALA.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -1721,9 +1914,11 @@ h3{
                 <a href="#" class="btn custom-btn">order now!</a>
               </div>
             </div>
+            </div>
             <!--5th card in 13th collapse ends-->
 
             <!--6th card in 13th collapse begins-->
+            <div class="col-md-3">
             <div class="card" style="width: 14rem;">
               <img src="images\VEGITARIAN CHETTINADU.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -1732,9 +1927,11 @@ h3{
                 <a href="#" class="btn custom-btn">order now!</a>
               </div>
             </div>
+            </div>
             <!--6th card in 13th collapse ends-->
 
             <!--7th card in 13th collapse begins-->
+            <div class="col-md-3">
             <div class="card" style="width: 14rem;">
               <img src="images\VEG KADAI.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -1743,16 +1940,19 @@ h3{
                 <a href="#" class="btn custom-btn">order now!</a>
               </div>
             </div>
+            </div>
             <!--7th card in 13th collapse ends-->
         </div>
-      </div>
+      
       <!--13th collapse ends-->
-
       <!--14th collapse begins-->
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample14">
-          <h3>DOWN TOWN SPEACIALS</h3>
+      
+      
+        <div class="row items" id="downtownspeacial">
+          <hr style=" border-top: 20px dotted #F4991A;">
+         <center> <h3 style="color: white;">DOWN TOWN SPEACIALS</h3></center>
           <!--1st card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\SULTHANA FRIED RICECHICKENVEG.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1761,9 +1961,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--1st card in 14th collapse ends-->
 
            <!--2nd card in 14th collapse begins-->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\BURNT FRIED RICE COMBO.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1772,9 +1974,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--2nd card in 14th collapse ends-->
 
           <!--3rd card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\ARABIC RICE WITH MEXICAN CHICKEN.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1783,9 +1987,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--3rd card in 14th collapse ends-->
 
            <!--4th card in 14th collapse begins-->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\SIMILA RICE WITH MEXICAN BEEF.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1794,9 +2000,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--4th card in 14th collapse ends-->
 
           <!--5th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\ARABIC GRILL WITH GARLIC RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1805,9 +2013,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--5th card in 14th collapse ends-->
 
            <!--6th card in 14th collapse begins-->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\BEEF OYSTER WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1816,9 +2026,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--6th card in 14th collapse ends-->
 
           <!--7th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\CHICKEN OYSTER WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1827,9 +2039,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--7th card in 14th collapse ends-->
 
           <!--8th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\DRAGON CHICKEN WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1838,9 +2052,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--8th card in 14th collapse ends-->
 
           <!--9th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\MILITARY CHICKEN WITH GARLIC RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1849,9 +2065,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--9th card in 14th collapse ends-->
 
            <!--10th card in 14th collapse begins-->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\KETHAL CHICKEN WITH GHEE RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1860,9 +2078,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--10th card in 14th collapse ends-->
 
           <!--11th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\HONEY GLAZE CHICKEN WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1871,9 +2091,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--11th card in 14th collapse ends-->
 
           <!--12th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\DOWN TOWN SPECIAL NOODLES.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1882,9 +2104,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--12th card in 14th collapse ends-->
 
           <!--13th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\PRAWN RED CURRY WITH PLAIN RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1893,9 +2117,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--13th card in 14th collapse ends-->
 
           <!--14th card in 14th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\KEBAB WITH ROTIRICE.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1904,18 +2130,21 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--14th card in 14th collapse ends-->
 
            
         </div>
-      </div>
+      
       <!--14th collapse ends-->
-
-       <!--15th collapse begins-->
-       <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample15">
-          <h3>CHARCOAL</h3>
+      <!--15th collapse begins-->
+      
+      
+        <div class="row items" id="charcoal">
+          <hr style=" border-top: 20px dotted #F4991A;">
+          <center><h3 style="color: white;">CHARCOAL</h3></center>
           <!--1st card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\BARBE QUE WITH NAAN.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1924,9 +2153,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--1st card in 15th collapse ends-->
 
            <!--2nd card in 15th collapse begins-->
+           <div class="col-md-3">
            <div class="card" style="width: 14rem;">
             <img src="images\FISH BBQ.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1935,9 +2166,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--2nd card in 15th collapse ends-->
 
           <!--3rd card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\AL FAHAM HALF.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1946,9 +2179,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--3rd card in 15th collapse ends-->
 
           <!--4th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\SHAWAI HALF.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1957,9 +2192,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--4th card in 15th collapse ends-->
 
           <!--5th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\GRILLED CHICKEN FULL.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1968,9 +2205,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--5th card in 15th collapse ends-->
 
           <!--6th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\THANDOORI CHICKEN HALF.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1979,8 +2218,10 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--6th card in 15th collapse ends-->
           <!--7th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\CHICKEN TIKKAS.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -1989,9 +2230,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--7th card in 15th collapse ends-->
 
           <!--8th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\KEBABS.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -2000,9 +2243,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--8th card in 15th collapse ends-->
 
           <!--9th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\KALMI KEBAB.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -2011,9 +2256,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--9th card in 15th collapse ends-->
 
           <!--10th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\LASUNI KEBAB.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -2022,9 +2269,11 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--10th card in 15th collapse ends-->
 
           <!--11th card in 15th collapse begins-->
+          <div class="col-md-3">
           <div class="card" style="width: 14rem;">
             <img src="images\NOORANI KEBAB.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -2033,14 +2282,18 @@ h3{
               <a href="#" class="btn custom-btn">order now!</a>
             </div>
           </div>
+          </div>
           <!--11th card in 15th collapse ends-->
 
         </div>
-      </div>
+      
       <!--15th collapse ends-->
-    
-  </div>  
-<!--collapse ends-->
+
+
+  </div>
+
+          
+      
   </section>
 
   <!-- Footer section begins -->
@@ -2061,4 +2314,6 @@ h3{
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </html>
