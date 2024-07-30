@@ -98,3 +98,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/*button in card in menu*/
+.custom-btn{
+  color: white;
+  background-color: #FF8303;
+}
+.custom-btn:focus-within{
+  color:black;
+  background-color: white;
+}
+
+
+
+.custom-btn:hover{
+  color: #F4991A;
+  background-color: black;
+}
+
+.card{
+  border:3px solid black;
+}
+/*class to hide cards in menu*/
+.hide{
+  display: none;
+}
+.menu li{
+    padding-top: 3px;
+}
