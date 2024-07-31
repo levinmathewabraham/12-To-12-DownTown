@@ -57,55 +57,50 @@
     </header>
 </section>
 <!-- Header section ends -->
-   <section id="sidebar" style="margin-top: 10rem;">
-
-   
-    <button class="btn custom-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      <i class="fa-solid fa-bars"></i> Menu List
-    </button>
-    
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu card</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-       
-        
-          <ul class="menu " style="list-style: none;">
-            <li><button class="btn custom-btn " type="button" onclick="showhideall()">all items</button></li>
-            <li><a class="btn custom-btn " onclick="showhide(soup)">soups</a></li>
-            <li><button class="btn custom-btn" onclick="showhide(noodles)">noodles</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(appetzer)">appetzer</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(salads)">salads</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(breads)">breads</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(muttoncurries)">muttoncurries</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(chinesecurries)">chinesecurries</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(ricebiriyani)">ricebiriyani</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(chinsesvegcurries)">chinsesvegcurries</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(beefvariety)">beefvariety</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(seafoodspecial)">seafoodspecial</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(indianvegcurries)">indianvegcurries</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(downtownspeacial)">downtownspeacial</button></li>
-            <li><button class="btn custom-btn" onclick="showhide(charcoal)">charcoal</button></li>
-          </ul>
-        
-      </div>
-    </div>
-   </section>
-  <section id="menu-section">
+  
+  <section id="menu-section" >
     <!--background img-->
     <div class="background"></div>
-    <div class="row mx-auto" style="margin-top: 5rem;">
-      
-      
+    <div class="row " style="margin-top: 10rem; width: 100%;">
+      <div class="col-4 "  >
+        <nav class="d-flex  navbar navbar-expand-md  "style="background-color:transparent;width: 4.5rem; ">
+          
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-items" aria-controls="menu-items" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+              <i class="fa-solid fa-list "></i> Menu List  
+            </button>
+            <div class="collapse  navbar-collapse " id="menu-items" >
+              
+              <ul class="menu " style="list-style: none; ">
+                <li><button class="btn custom-btn " type="button" onclick="showhideall()">all<br>items</button></li>
+                <li><a class="btn custom-btn " onclick="showhide(soup)">soups</a></li>
+                <li><button class="btn custom-btn" onclick="showhide(noodles)">noodles</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(appetzer)">appetzer</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(salads)">salads</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(breads)">breads</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(muttoncurries)">mutton<br>curries</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(chinesecurries)">chinese<br>curries</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(ricebiriyani)">rice<br>biriyani</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(chinsesvegcurries)">chinses<br>veg<br>curries</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(beefvariety)">beef<br>variety</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(seafoodspecial)">seafood<br>special</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(indianvegcurries)">indian<br>veg<br>curries</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(downtownspeacial)">down<br>town<br>speacial</button></li>
+                <li><button class="btn custom-btn" onclick="showhide(charcoal)">charcoal</button></li>
+              </ul>
+              
+            </div>
+          
+        </nav>
+      </div>
+      <div class="col-8">
                   <div class="row  items " id="soup" >
                   
                    <center> <h3 style="color: white;">SOUPS</h3></center>
 
                     <!--1st card  in collapse 1 begins-->
-                    <div class="col-md-3">
-                    <div class="card" style="width: 14rem; ">
+                    <div class="col-md-4">
+                    <div class="card" style="width: 16rem; ">
                       <img src="images\seafoodsoup.png" class="card-img-fluid"  alt="...">
                       <div class="card-body">
                         <h5 class="card-title">SEAFOOD SOOUP</h5>
@@ -115,9 +110,9 @@
                     </div>
                     </div>
                     <!--1st card in collapse 1 ends-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--2nd card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\tomyumsoup.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">TOM YUM</h5>
@@ -128,9 +123,9 @@
                     </div>
                     <!--2nd card in collapse 1 ends-->
           
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--3rd card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\sweetcornsoup.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">SWEET CORN SOUP</h5>
@@ -140,9 +135,9 @@
                     </div>
                     </div>
                     <!--3rd card in collapse 1 ends-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                      <!--4th card  in collapse 1 begins-->
-                     <div class="card" style="width: 14rem;">
+                     <div class="card" style="width: 16rem;">
                       <img src="images\hotsoursoup.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">HOT &amp;SOUR SOUP </h5>
@@ -154,9 +149,9 @@
                     <!--4th card in collapse 1 ends-->
           
           
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--5th card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\lumpom.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">LUM POM SOUP </h5>
@@ -167,9 +162,9 @@
                     </div>
                     <!--5th card in collapse 1 ends-->
           
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--6th card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\monchowsoup.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">MONCHOW SOUP</h5>
@@ -179,9 +174,9 @@
                     </div>
                     </div>
                     <!--6th card in collapse 1 ends-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--7th card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\creamofchicken.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CREAM OF CHICKEN</h5>
@@ -191,9 +186,9 @@
                     </div>
                     <!--7th card in collapse 1 ends-->
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                      <!--8th card  in collapse 1 begins-->
-                     <div class="card" style="width: 14rem;">
+                     <div class="card" style="width: 16rem;">
                       <img src="images\creamofmushroom.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CREAM OF MUSHROOM</h5>
@@ -203,9 +198,9 @@
                     </div>
                     <!--8th card in collapse 1 ends-->
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--9th card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\clearsoup.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CLEAR SOUP VEG &amp; NON VEG</h5>
@@ -215,9 +210,9 @@
                     </div>
                     <!--9th card in collapse 1 ends-->
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--10th card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\lemonsoup.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">LEMON SOUP </h5>
@@ -228,9 +223,9 @@
                     <!--10th card in collapse 1 ends-->
                     </div>
           
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                     <!--11th card  in collapse 1 begins-->
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 16rem;">
                       <img src="images\creamoflemon.png" class="card-img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">CREAM OF LEMON SOUP </h5>
@@ -252,8 +247,8 @@
           <hr style=" border-top: 20px dotted #F4991A;">
           <center><h3 style="color: white;">NOODLES</h3></center>
           <!--1st card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\chickennoodle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHICKEN NOODLES</h5>
@@ -267,8 +262,8 @@
          
           
           <!--2nd card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\muttonnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHICKEN NOODLES</h5>
@@ -280,8 +275,8 @@
           <!--2nd card in 2nd collapse ends-->
 
           <!--3rd card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\eggnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">EGG NOODLES</h5>
@@ -293,8 +288,8 @@
           <!--3rd card in 2nd collapse ends-->
 
           <!--4th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\vegnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">VEG NOODLES</h5>
@@ -306,8 +301,8 @@
           <!--4th card in 2nd collapse ends-->
 
           <!--5th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\mixnoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">MIX NOODLES</h5>
@@ -319,8 +314,8 @@
           <!--5th card in 2nd collapse ends-->
 
           <!--6th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\SZECHUANNODDLE.PNG" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">SZECHUAN NOODLES</h5>
@@ -333,8 +328,8 @@
 
 
           <!--7th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\chickentikkanoddle.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHICKEN TIKKA NOODLES</h5>
@@ -347,8 +342,8 @@
 
 
            <!--8th card in 2nd collapse begin -->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\singaporenoddles.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">SINGAPORE NOODLES</h5>
@@ -361,8 +356,8 @@
 
 
           <!--9th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\SHANGHINODDLES.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">SHANGHI NOODLES</h5>
@@ -374,8 +369,8 @@
           <!--9th card in 2nd collapse ends-->
 
           <!--10th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\PRAWNNODDLES.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">PRAWNS NOODLES</h5>
@@ -388,8 +383,8 @@
 
 
           <!--11th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\CHINESECHOPSUEY.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHINESE CHOP SUEY</h5>
@@ -401,8 +396,8 @@
           <!--11th card in 2nd collapse ends-->
 
           <!--12th card in 2nd collapse begin -->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\AMERICANCHOPSUEY.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">AMERICAN CHOP SUEY</h5>
@@ -422,8 +417,8 @@
         <hr style=" border-top: 20px dotted #F4991A;">
         <center><h3 style="color: white;">APPETZER</h3></center>
         <!--1st card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\chickenlolipop.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN LOLIPOP</h5>
@@ -435,8 +430,8 @@
         <!--1st card in 3rd collapse ends-->
 
         <!--2nd card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">WALA CHICKEN</h5>
@@ -448,8 +443,8 @@
         <!--2nd card in 3rd collapse ends-->
 
         <!--3rd card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\DOWN TOWN CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">DOWN TOWN CHICKEN</h5>
@@ -461,8 +456,8 @@
         <!--3rd card in 3rd collapse ends-->
 
          <!--4th card in 3rd collapse begins-->
-        <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\KETHEL CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">KETHEL CHICKEN</h5>
@@ -474,8 +469,8 @@
         <!--4th card in 3rd collapse ends-->
 
          <!--5th card in 3rd collapse begins-->
-        <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\CHICKENMAJESTIC.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN MAJESTIC</h5>
@@ -487,8 +482,8 @@
         <!--5th card in 3rd collapse ends-->
 
         <!--6th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CRISPY FRIED CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CRISPY FRIED CHICKEN</h5>
@@ -500,8 +495,8 @@
         <!--6th card in 3rd collapse ends-->
 
          <!--7th card in 3rd collapse begins-->
-        <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\PANEER TIKKA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PANEER TIKKA</h5>
@@ -513,8 +508,8 @@
         <!--7th card in 3rd collapse ends-->
 
         <!--8th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\HONEY GLAZE VEG.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">HONEY GLAZE VEG</h5>
@@ -526,8 +521,8 @@
         <!--8th card in 3rd collapse ends-->
         
         <!--9th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN MANGOLIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN MANGOLIAN</h5>
@@ -539,8 +534,8 @@
         <!--9th card in 3rd collapse ends-->
 
          <!--10th card in 3rd collapse begins-->
-        <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\KATHI CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">KATHI CHICKEN</h5>
@@ -552,8 +547,8 @@
         <!--10th card in 3rd collapse ends-->
 
         <!--11th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\PRAWNS MAJESTIC.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PRAWNS MAJESTIC</h5>
@@ -565,8 +560,8 @@
         <!--11th card in 3rd collapse ends-->
 
         <!--12th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BAR BE QUE WINHS.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BAR BE QUE WINHS</h5>
@@ -578,8 +573,8 @@
         <!--12th card in 3rd collapse ends-->
 
         <!--13th card in 3rd collapse beings-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\HONEY GLAZE CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">HONEY GLAZE CHICKEN</h5>
@@ -591,8 +586,8 @@
         <!--13th card in 3rd collapse ends-->
 
          <!--14th card in 3rd collapse begins-->
-        <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\PANEER PAKKODA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PANEER PAKKODA</h5>
@@ -604,8 +599,8 @@
         <!--14th card in 3rd collapse ends-->
 
         <!--15th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN PAKKODA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN PAKKODA</h5>
@@ -617,8 +612,8 @@
         <!--15th card in 3rd collapse ends-->
 
         <!--16th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\ARABIC PRAWNS.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">ARABIC PRAWNS</h5>
@@ -630,8 +625,8 @@
         <!--16th card in 3rd collapse ends-->
 
         <!--17th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\PEPPER FRIED PRAWNS.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PEPPER FRIED PRAWNS</h5>
@@ -643,8 +638,8 @@
         <!--17th card in 3rd collapse ends-->
 
         <!--18th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\GOLDERN FRIED PRAWNS.png.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">GOLDERN FRIED PRAWNS</h5>
@@ -655,8 +650,8 @@
         </div>
         <!--18th card in 3rd collapse ends-->
          <!--19th card in 3rd collapse begins-->
-        <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\FISH FINGERS.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">FISH FINGERS</h5>
@@ -668,8 +663,8 @@
         <!--19th card in 3rd collapse ends-->
 
         <!--20th card in 3rd collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CALAMARI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CALAMARI</h5>
@@ -692,8 +687,8 @@
       <hr style=" border-top: 20px dotted #F4991A;">
       <center><h3 style="color: white;"> SALADS</h3></center>
       <!--1st card in 4th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MIXED VEG SALAD.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MIXED VEG SALAD</h5>
@@ -705,8 +700,8 @@
       <!--1st card in 4th collapse ends-->
 
       <!--2nd card in 4th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CUCUMBER SALAD.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CUCUMBER SALAD</h5>
@@ -718,8 +713,8 @@
       <!--2nd card in 4th collapse ends-->
 
       <!--3rd card in 4th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\GREEN SALAD.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">GREEN SALAD</h5>
@@ -730,8 +725,8 @@
       </div>
       <!--3rd card in 4th collapse ends-->
       <!--4th card in 4th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\RUSSIAN SALAD.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">RUSSIAN SALAD</h5>
@@ -742,8 +737,8 @@
       </div>
       <!--4th card in 4th collapse ends-->
       <!--5th card in 4th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHICKEN HAWAIIAN SALAD.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHICKEN HAWAIIAN SALAD</h5>
@@ -764,8 +759,8 @@
       <hr style=" border-top: 20px dotted #F4991A;">
       <center><h3 style="color: white;"> BREADS</h3></center>
       <!--1st card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\TANDOORI ROTI.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">TANDOORI ROTI</h5>
@@ -777,8 +772,8 @@
       <!--1st card in 5th collapse ends-->
 
        <!--2nd card in 5th collapse begins-->
-       <div class="col-md-3">
-       <div class="card" style="width: 14rem;">
+       <div class="col-md-4">
+       <div class="card" style="width: 16rem;">
         <img src="images\NAAN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">NAAN</h5>
@@ -790,8 +785,8 @@
       <!--2nd card in 5th collapse ends-->
 
       <!--3rd card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\GARLIC NAAN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">GARLIC NAAN</h5>
@@ -803,8 +798,8 @@
       <!--3rd card in 5th collapse ends-->
 
       <!--4th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\BUTTER NAAN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">BUTTER NAAN</h5>
@@ -816,8 +811,8 @@
       <!--4th card in 5th collapse ends-->
 
       <!--5th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHEESE NAAN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHEESE NAAN</h5>
@@ -829,8 +824,8 @@
       <!--5th card in 5th collapse ends-->
 
       <!--6th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\ALOO KULCHA.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">ALOO KULCHA</h5>
@@ -842,8 +837,8 @@
       <!--6th card in 5th collapse ends-->
 
       <!--7th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\VEG KULCHA.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">VEG KULCHA</h5>
@@ -855,8 +850,8 @@
       <!--7th card in 5th collapse ends-->
 
       <!--8th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\TANDOORI PARATHA.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">TANDOORI PARATHA</h5>
@@ -867,8 +862,8 @@
       </div>
       <!--8th card in 5th collapse ends-->
        <!--9th card in 5th collapse begins-->
-       <div class="col-md-3">
-       <div class="card" style="width: 14rem;">
+       <div class="col-md-4">
+       <div class="card" style="width: 16rem;">
         <img src="images\keemanaan.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">KHEEMA NAAN</h5>
@@ -880,8 +875,8 @@
       <!--9th card in 5th collapse ends-->
 
       <!--10th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHAPPATHI.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHAPPATHI</h5>
@@ -893,8 +888,8 @@
       <!--10th card in 5th collapse ends-->
 
       <!--11th card in 5th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\KERALA POROTTA.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">KERALA POROTTA</h5>
@@ -914,8 +909,8 @@
       <hr style=" border-top: 20px dotted #F4991A;">
       <center><h3 style="color: white;">MUTTON CURRIES</h3></center>
       <!--1st card in 6th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MUTTON JALFREZI.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MUTTON JALFREZI</h5>
@@ -927,8 +922,8 @@
       <!--1st card in 6th collapse ends-->
 
       <!--2nd card in 6th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MUTTON VINDALOO.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MUTTON VINDALOO</h5>
@@ -940,8 +935,8 @@
       <!--2nd card in 6th collapse ends-->
 
       <!--3rd card in 6th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MUTTON DOPIAZA.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MUTTON DOPIAZA</h5>
@@ -953,8 +948,8 @@
       <!--3rd card in 6th collapse ends-->
 
       <!--4th card in 6th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MUTTON ROBAN JOSH.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MUTTON ROBAN JOSH</h5>
@@ -966,8 +961,8 @@
       <!--4th card in 6th collapse ends-->
 
       <!--5th card in 6th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MUTTON MASALA.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MUTTON MASALA</h5>
@@ -979,8 +974,8 @@
       <!--5th card in 6th collapse ends-->
 
       <!--6th card in 6th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\MUTTON PEPPER FRY.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">MUTTON PEPPER FRY</h5>
@@ -1000,8 +995,8 @@
       <hr style=" border-top: 20px dotted #F4991A;">
       <center><h3 style="color: white;">CHINESE CURRIES</h3></center>
       <!--1st card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHILLY CHICKEN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHILLY CHICKENP</h5>
@@ -1013,8 +1008,8 @@
       <!--1st card in 7th collapse ends-->
 
       <!--2nd card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\SCHEZWAN CHICKEN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">SCHEZWAN CHICKEN</h5>
@@ -1026,8 +1021,8 @@
       <!--2nd card in 7th collapse ends-->
 
       <!--3rd card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHICKEN IN HOT CHILLY SAUCE.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHICKEN IN HOT CHILLY SAUCE</h5>
@@ -1039,8 +1034,8 @@
       <!--3rd card in 7th collapse ends-->
 
       <!--4th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\SLICED CHICKEN WITH MUSHROOM.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">SLICED CHICKEN WITH MUSHROOM BAMBOO SHOOT</h5>
@@ -1052,8 +1047,8 @@
       <!--4th card in 7th collapse ends-->
 
       <!--5th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\DEVIL CHICKEN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">DEVIL CHICKEN</h5>
@@ -1064,8 +1059,8 @@
       </div>
       <!--5th card in 7th collapse ends-->
       <!--6th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHICKEN IN OYSTER SAUCE.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHICKEN IN OYSTER SAUCE</h5>
@@ -1077,8 +1072,8 @@
       <!--6th card in 7th collapse ends-->
 
       <!--7th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHICKEN IN SWEET GARLIC SAUCE.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHICKEN IN SWEET GARLIC SAUCE</h5>
@@ -1090,8 +1085,8 @@
       <!--7th card in 7th collapse ends-->
 
        <!--8th card in 7th collapse begins-->
-       <div class="col-md-3">
-       <div class="card" style="width: 14rem;">
+       <div class="col-md-4">
+       <div class="card" style="width: 16rem;">
         <img src="images\PINEAPPLE CHICKEN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">PINEAPPLE CHICKEN</h5>
@@ -1103,8 +1098,8 @@
       <!--8th card in 7th collapse ends-->
 
       <!--9th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\EGG CHILLY.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">EGG CHILLY</h5>
@@ -1116,8 +1111,8 @@
       <!--9th card in 7th collapse ends-->
 
       <!--10th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\GARLIC CHICKEN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">GARLIC CHICKEN</h5>
@@ -1129,8 +1124,8 @@
       <!--10th card in 7th collapse ends-->
 
       <!--11th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">GINGER CHICKEN</h5>
@@ -1142,8 +1137,8 @@
       <!--11th card in 7th collapse ends-->
 
       <!--12th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHICKEN MANCHURIAN.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHICKEN MANCHURIAN</h5>
@@ -1155,8 +1150,8 @@
       <!--12th card in 7th collapse ends-->
 
       <!--13th card in 7th collapse begins-->
-      <div class="col-md-3">
-      <div class="card" style="width: 14rem;">
+      <div class="col-md-4">
+      <div class="card" style="width: 16rem;">
         <img src="images\CHILLY FISH.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">CHILLY FISH</h5>
@@ -1178,8 +1173,8 @@
         <hr style=" border-top: 20px dotted #F4991A;">
         <center><h3 style="color: white;">RICE BIRIYANI</h3></center>
         <!--1st card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\KARACHI BIRIYANI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">KARACHI BIRIYANI</h5>
@@ -1190,8 +1185,8 @@
         </div>
         <!--1st card in 8th collapse ends-->
         <!--2nd card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\PRAWNS FRIED ICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PRAWNS FRIED RICE</h5>
@@ -1202,8 +1197,8 @@
         </div>
         <!--2nd card in 8th collapse ends-->
         <!--3rd card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN FROED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN FRIED RICE</h5>
@@ -1215,8 +1210,8 @@
         <!--3rd card in 8th collapse ends-->
 
         <!--4th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\EGGVEGFRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">EGG/VEG.FRIED RICE</h5>
@@ -1228,8 +1223,8 @@
         <!--4th card in 8th collapse ends-->
 
         <!--5th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\MIXED FRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">MIXED FRIED RICE</h5>
@@ -1241,8 +1236,8 @@
         <!--5th card in 8th collapse ends-->
 
         <!--6th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\SZECHUAN FRIED ICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">SZECHUAN FRIED RICE</h5>
@@ -1254,8 +1249,8 @@
         <!--6th card in 8th collapse ends-->
 
         <!--7th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\SIGNAPORE FRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">SIGNAPORE FRIED RICE</h5>
@@ -1267,8 +1262,8 @@
         <!--7th card in 8th collapse ends-->
 
         <!--8th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\SHANGHAI FRIED RICE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">SHANGHAI FRIED RICE</h5>
@@ -1280,8 +1275,8 @@
         <!--8th card in 8th collapse ends-->
 
         <!--9th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\KASMIRI PULAD.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">KASMIRI PULAO</h5>
@@ -1293,8 +1288,8 @@
         <!--9th card in 8th collapse ends-->
 
         <!--10th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CASHEWNUT PULAD.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CASHEWNUT PULAO</h5>
@@ -1306,8 +1301,8 @@
         <!--10th card in 8th collapse ends-->
 
         <!--11th card in 8th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN BIRIYANI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN BIRIYANI</h5>
@@ -1319,8 +1314,8 @@
         <!--11th card in 8th collapse ends-->
 
          <!--12th card in 8th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\BBQ BIRIYANI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BBQ BIRIYANI</h5>
@@ -1340,8 +1335,8 @@
         <hr style=" border-top: 20px dotted #F4991A;">
         <center><h3 style="color: white;">CHINESE VEG CURRIES</h3></center>
         <!--1st card in 9th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\GOBI MANCHURIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">GOBI MANCHURIAN</h5>
@@ -1353,8 +1348,8 @@
         <!--1st card in 9th collapse ends-->
 
          <!--2nd card in 9th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\CHILLY GOPI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHILLY GOBI</h5>
@@ -1366,8 +1361,8 @@
         <!--2nd card in 9th collapse ends-->
 
          <!--3rd card in 9th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\PANEER CHILLY.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PANEER CHILLY</h5>
@@ -1379,8 +1374,8 @@
         <!--3rd card in 9th collapse ends-->
 
         <!--4th card in 9th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\MUSHROOM CHILLY.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">MUSHROOM CHILLY</h5>
@@ -1392,8 +1387,8 @@
         <!--4th card in 9th collapse ends-->
 
          <!--5th card in 9th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\MUSHROOM MANCHURIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">MUSHROOM MANCHURIAN</h5>
@@ -1405,8 +1400,8 @@
         <!--5th card in 9th collapse ends-->
 
         <!--6th card in 9th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\PANEER MANCHURIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PANEER MANCHURIAN</h5>
@@ -1426,8 +1421,8 @@
         <hr style=" border-top: 20px dotted #F4991A;">
         <center><h3 style="color: white;">INDIAN CURRIES</h3></center>
         <!--1st card in 10th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BUTTER CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BUTTER CHICKEN</h5>
@@ -1439,8 +1434,8 @@
         <!--1st card in 10th collapse ends-->
 
         <!--2nd card in 10th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN ROGAN JOSH.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN ROGAN JOSH</h5>
@@ -1452,8 +1447,8 @@
         <!--2nd card in 10th collapse ends-->
 
         <!--3rd card in 10th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN JAFREZI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN JAFREZI</h5>
@@ -1465,8 +1460,8 @@
         <!--3rd card in 10th collapse ends-->
 
          <!--4th card in 10th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN DOPIAZA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN DOPIAZA</h5>
@@ -1478,8 +1473,8 @@
         <!--4th card in 10th collapse ends-->
 
         <!--5th card in 10th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN PALAK.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN PALAK</h5>
@@ -1491,8 +1486,8 @@
         <!--5th card in 10th collapse ends-->
 
          <!--6th card in 10th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\EGG MASALA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">EGG MASALA</h5>
@@ -1504,8 +1499,8 @@
         <!--6th card in 10th collapse ends-->
 
         <!--7th card in 10th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\AFGENI CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AFGANI CHICKEN</h5>
@@ -1517,8 +1512,8 @@
         <!--7th card in 10th collapse ends-->
 
         <!--8th card in 10th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\PANJABI CHICKEN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PANJABI CHICKEN</h5>
@@ -1530,8 +1525,8 @@
         <!--8th card in 10th collapse ends-->
 
          <!--9th card in 10th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\CHIKKEN TIKKA MASALA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN TIKKA MASALA</h5>
@@ -1543,8 +1538,8 @@
         <!--9th card in 10th collapse ends-->
 
           <!--10th card in 10th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\CHETTINAD.PNG" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHIKKEB CHETTINADU</h5>
@@ -1556,8 +1551,8 @@
           <!--10th card in 10th collapse ends-->
 
          <!--11th card in 10th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\HYDERABADI.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN HYDERABADI</h5>
@@ -1569,8 +1564,8 @@
         <!--11th card in 10th collapse ends-->
         
          <!--12th card in 10th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\CHICKEN MAHARAJA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHICKEN MAHARAJA</h5>
@@ -1590,8 +1585,8 @@
         <hr style=" border-top: 20px dotted #F4991A;">
         <center><h3 style="color: white;">BEEF VARITEY</h3></center>
         <!--1st card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BEEF PEPPER FRY.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF PEPPER FRY</h5>
@@ -1603,8 +1598,8 @@
         <!--1st card in 11th collapse ends-->
 
         <!--2nd card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CHILLY BEEF.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CHILLY BEEF</h5>
@@ -1616,8 +1611,8 @@
         <!--2nd card in 11th collapse ends-->
 
         <!--3rd card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BEEF ROAST.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF ROAST</h5>
@@ -1629,8 +1624,8 @@
         <!--3rd card in 11th collapse ends-->
 
         <!--4th card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\MEXICAN BEEF.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">MEXICAN BEEF</h5>
@@ -1642,8 +1637,8 @@
         <!--4th card in 11th collapse ends-->
 
          <!--5th card in 11th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\BEEF IN OYSTER SAUCE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF IN OYSTER SAUCE</h5>
@@ -1655,8 +1650,8 @@
         <!--5th card in 11th collapse ends-->
 
         <!--6th card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\beef.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF PEPPER MASALA</h5>
@@ -1668,8 +1663,8 @@
         <!--6th card in 11th collapse ends-->
 
          <!--7th card in 11th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\BEEF CHILLY PEPPER.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF CHILLY PEPPER</h5>
@@ -1681,8 +1676,8 @@
         <!--7th card in 11th collapse ends-->
 
         <!--8th card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BEEF MANGOLIAN.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF MANGOLIAN</h5>
@@ -1694,8 +1689,8 @@
         <!--8th card in 11th collapse ends-->
 
          <!--9th card in 11th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\BEEF DRY FRY.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BBEEF DRY FRY</h5>
@@ -1707,8 +1702,8 @@
         <!--9th card in 11th collapse ends-->
 
         <!--10th card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\SLICED BEEF WITH MUSHROOM.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">SLICED BEEF WITH MUSHROOM BAMBOO SHOOT </h5>
@@ -1720,8 +1715,8 @@
         <!--10th card in 11th collapse ends-->
 
         <!--11th card in 11th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BEEF IN BLACK BEAN SAUCE.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BEEF IN BLACK BEAN SAUCE </h5>
@@ -1741,8 +1736,8 @@
         <hr style=" border-top: 20px dotted #F4991A;">
        <center> <h3 style="color: white;">SEA FOOD SPEACIALS</h3></center>
         <!--1st card in 12th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\PRAWNS FRYTAWA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PRAWNS FRY/TAWA</h5>
@@ -1754,8 +1749,8 @@
         <!--1st card in 12th collapse ends-->
 
          <!--2nd card in 12th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\MIX SEAFOOD GRILL.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">MIX SEAFOOD GRILL</h5>
@@ -1767,8 +1762,8 @@
         <!--2nd card in 12th collapse ends-->
 
          <!--3rd card in 12th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\FISH FRYTAWA.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">FISH FRY/ TAWA</h5>
@@ -1780,8 +1775,8 @@
         <!--3rd card in 12th collapse ends-->
 
         <!--4th card in 12th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\CRAB.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">CRAB</h5>
@@ -1793,8 +1788,8 @@
         <!--4th card in 12th collapse ends-->
 
         <!--5th card in 12th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\BABY OCTOPUS.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">BABY OCTOPUS</h5>
@@ -1806,8 +1801,8 @@
         <!--5th card in 12th collapse ends-->
 
         <!--6th card in 12th collapse begins-->
-        <div class="col-md-3">
-        <div class="card" style="width: 14rem;">
+        <div class="col-md-4">
+        <div class="card" style="width: 16rem;">
           <img src="images\GRILLED FISH.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">GRILLED FISH</h5>
@@ -1819,8 +1814,8 @@
         <!--6th card in 12th collapse ends-->
 
          <!--7th card in 12th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\MUSSELS.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">MUSSELS</h5>
@@ -1832,8 +1827,8 @@
         <!--7th card in 12th collapse ends-->
 
          <!--8th card in 12th collapse begins-->
-         <div class="col-md-3">
-         <div class="card" style="width: 14rem;">
+         <div class="col-md-4">
+         <div class="card" style="width: 16rem;">
           <img src="images\SQUID.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">SQUID</h5>
@@ -1853,8 +1848,8 @@
           <hr style=" border-top: 20px dotted #F4991A;">
           <center><h3 style="color: white;">INDIAN VEG CURRIES</h3></center>
           <!--1st card in 13th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\PANEER BUTTER MASALA.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">PANEER BUTTER MASALA</h5>
@@ -1866,8 +1861,8 @@
           <!--1st card in 13th collapse ends-->
 
            <!--2nd card in 13th collapse begins-->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\PANEER KOFTA CURRY.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">PANEER KOFTA CURRY</h5>
@@ -1879,8 +1874,8 @@
           <!--2nd card in 13th collapse ends-->
 
             <!--3rd card in 13th collapse begins-->
-            <div class="col-md-3">
-            <div class="card" style="width: 14rem;">
+            <div class="col-md-4">
+            <div class="card" style="width: 16rem;">
               <img src="images\MIXED VEG KORMA.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">MIXED VEG KORMA</h5>
@@ -1892,8 +1887,8 @@
             <!--3rd card in 13th collapse ends-->
 
              <!--4th card in 13th collapse begins-->
-             <div class="col-md-3">
-             <div class="card" style="width: 14rem;">
+             <div class="col-md-4">
+             <div class="card" style="width: 16rem;">
               <img src="images\ALPP GOPI MASALA.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">ALPP GOPI MASALA</h5>
@@ -1905,8 +1900,8 @@
             <!--4th card in 13th collapse ends-->
 
             <!--5th card in 13th collapse begins-->
-            <div class="col-md-3">
-            <div class="card" style="width: 14rem;">
+            <div class="col-md-4">
+            <div class="card" style="width: 16rem;">
               <img src="images\MUSHROOM MUTTER MASALA.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">MUSHROOM MUTTER MASALA</h5>
@@ -1918,8 +1913,8 @@
             <!--5th card in 13th collapse ends-->
 
             <!--6th card in 13th collapse begins-->
-            <div class="col-md-3">
-            <div class="card" style="width: 14rem;">
+            <div class="col-md-4">
+            <div class="card" style="width: 16rem;">
               <img src="images\VEGITARIAN CHETTINADU.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">VEGITARIAN CHETTINADU</h5>
@@ -1931,8 +1926,8 @@
             <!--6th card in 13th collapse ends-->
 
             <!--7th card in 13th collapse begins-->
-            <div class="col-md-3">
-            <div class="card" style="width: 14rem;">
+            <div class="col-md-4">
+            <div class="card" style="width: 16rem;">
               <img src="images\VEG KADAI.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">VEG KADAI</h5>
@@ -1952,8 +1947,8 @@
           <hr style=" border-top: 20px dotted #F4991A;">
          <center> <h3 style="color: white;">DOWN TOWN SPEACIALS</h3></center>
           <!--1st card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\SULTHANA FRIED RICECHICKENVEG.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">SULTHANA FRIED RICE(CHICKEN/VEG)</h5>
@@ -1965,8 +1960,8 @@
           <!--1st card in 14th collapse ends-->
 
            <!--2nd card in 14th collapse begins-->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\BURNT FRIED RICE COMBO.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BURNT FRIED RICE COMBO</h5>
@@ -1978,8 +1973,8 @@
           <!--2nd card in 14th collapse ends-->
 
           <!--3rd card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\ARABIC RICE WITH MEXICAN CHICKEN.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">ARABIC RICE WITH MEXICAN CHICKEN</h5>
@@ -1991,8 +1986,8 @@
           <!--3rd card in 14th collapse ends-->
 
            <!--4th card in 14th collapse begins-->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\SIMILA RICE WITH MEXICAN BEEF.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">SIMILA RICE WITH MEXICAN BEEF</h5>
@@ -2004,8 +1999,8 @@
           <!--4th card in 14th collapse ends-->
 
           <!--5th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\ARABIC GRILL WITH GARLIC RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">ARABIC GRILL WITH GARLIC RICE</h5>
@@ -2017,8 +2012,8 @@
           <!--5th card in 14th collapse ends-->
 
            <!--6th card in 14th collapse begins-->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\BEEF OYSTER WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BEEF OYSTER WITH RICE</h5>
@@ -2030,8 +2025,8 @@
           <!--6th card in 14th collapse ends-->
 
           <!--7th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\CHICKEN OYSTER WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHICKEN OYSTER WITH RICE</h5>
@@ -2043,8 +2038,8 @@
           <!--7th card in 14th collapse ends-->
 
           <!--8th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\DRAGON CHICKEN WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">DRAGON CHICKEN WITH RICE</h5>
@@ -2056,8 +2051,8 @@
           <!--8th card in 14th collapse ends-->
 
           <!--9th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\MILITARY CHICKEN WITH GARLIC RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">MILITARY CHICKEN WITH GARLIC RICE</h5>
@@ -2069,8 +2064,8 @@
           <!--9th card in 14th collapse ends-->
 
            <!--10th card in 14th collapse begins-->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\KETHAL CHICKEN WITH GHEE RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">KETHAL CHICKEN WITH GHEE RICE</h5>
@@ -2082,8 +2077,8 @@
           <!--10th card in 14th collapse ends-->
 
           <!--11th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\HONEY GLAZE CHICKEN WITH RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">HONEY GLAZE CHICKEN WITH RICE</h5>
@@ -2095,8 +2090,8 @@
           <!--11th card in 14th collapse ends-->
 
           <!--12th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\DOWN TOWN SPECIAL NOODLES.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">DOWN TOWN SPECIAL NOODLES</h5>
@@ -2108,8 +2103,8 @@
           <!--12th card in 14th collapse ends-->
 
           <!--13th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\PRAWN RED CURRY WITH PLAIN RICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">PRAWN RED CURRY WITH PLAIN RICE</h5>
@@ -2121,8 +2116,8 @@
           <!--13th card in 14th collapse ends-->
 
           <!--14th card in 14th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\KEBAB WITH ROTIRICE.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">KEBAB WITH ROTI/RICE</h5>
@@ -2144,8 +2139,8 @@
           <hr style=" border-top: 20px dotted #F4991A;">
           <center><h3 style="color: white;">CHARCOAL</h3></center>
           <!--1st card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\BARBE QUE WITH NAAN.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BARBE QUE WITH NAAN</h5>
@@ -2157,8 +2152,8 @@
           <!--1st card in 15th collapse ends-->
 
            <!--2nd card in 15th collapse begins-->
-           <div class="col-md-3">
-           <div class="card" style="width: 14rem;">
+           <div class="col-md-4">
+           <div class="card" style="width: 16rem;">
             <img src="images\FISH BBQ.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">FISH BBQ</h5>
@@ -2170,8 +2165,8 @@
           <!--2nd card in 15th collapse ends-->
 
           <!--3rd card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\AL FAHAM HALF.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">AL FAHAM HALF/FULL</h5>
@@ -2183,8 +2178,8 @@
           <!--3rd card in 15th collapse ends-->
 
           <!--4th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\SHAWAI HALF.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">SHAWAI HALF</h5>
@@ -2196,8 +2191,8 @@
           <!--4th card in 15th collapse ends-->
 
           <!--5th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\GRILLED CHICKEN FULL.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">GRILLED CHICKEN FULL</h5>
@@ -2209,8 +2204,8 @@
           <!--5th card in 15th collapse ends-->
 
           <!--6th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\THANDOORI CHICKEN HALF.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">THANDOORI CHICKEN HALF/FULL</h5>
@@ -2221,8 +2216,8 @@
           </div>
           <!--6th card in 15th collapse ends-->
           <!--7th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\CHICKEN TIKKAS.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CHICKEN TIKKAS</h5>
@@ -2234,8 +2229,8 @@
           <!--7th card in 15th collapse ends-->
 
           <!--8th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\KEBABS.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">KEBABS</h5>
@@ -2247,8 +2242,8 @@
           <!--8th card in 15th collapse ends-->
 
           <!--9th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\KALMI KEBAB.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">KALMI KEBAB</h5>
@@ -2260,8 +2255,8 @@
           <!--9th card in 15th collapse ends-->
 
           <!--10th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\LASUNI KEBAB.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">LASUNI KEBAB</h5>
@@ -2273,8 +2268,8 @@
           <!--10th card in 15th collapse ends-->
 
           <!--11th card in 15th collapse begins-->
-          <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <div class="col-md-4">
+          <div class="card" style="width: 16rem;">
             <img src="images\NOORANI KEBAB.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">NOORANI KEBAB</h5>
@@ -2289,7 +2284,7 @@
       
       <!--15th collapse ends-->
 
-
+        </div>
   </div>
 
           
