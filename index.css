@@ -102,6 +102,7 @@ footer {
 .custom-btn{
   color: white;
   background-color: #FF8303;
+  
 }
 .custom-btn:focus-within{
   color:black;
@@ -124,4 +125,5 @@ footer {
 }
 .menu li{
     padding-top: 3px;
+    
 }
