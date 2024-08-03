@@ -48,6 +48,82 @@
     color: black;
 }
 
+/* Menu Section */
+
+/*button in card in menu*/
+.custom-btn{
+    color: white;
+    background-color: #FF8303;
+}
+  
+.custom-btn:focus-within{
+    color:black;
+    background-color: white;
+}
+  
+.custom-btn:hover{
+color: #F4991A;
+background-color: black;
+}
+
+.card{
+border:3px solid black;
+}
+
+/*class to hide cards in menu*/
+.hide{
+display: none;
+}
+
+.menu li{
+    padding-top: 3px;
+}
+
+#sidebar {
+    background: #f8f9fa;
+    height: calc(100vh - 70px); /* Adjust height relative to navbar*/
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.menuBarAndContents {
+    margin-top: 6rem;
+    padding-left: 0px;
+}
+
+#menuSidebar {
+    z-index: 1030;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #sidebar {
+    position: static;
+    height: auto;
+  }
+
+  #menuSidebar {
+    display: none;
+  }
+
+  #menuSidebar.show {
+    display: block;
+  }
+
+  main {
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+}
+
+main {
+    z-index: 1;
+    padding-top: 1rem;
+}
+
 /* Home Section */
 .home-background {
     height: 100vh;
@@ -97,33 +173,4 @@ footer {
     padding-top: 10px;
     bottom: 0;
     width: 100%;
-}
-/*button in card in menu*/
-.custom-btn{
-  color: white;
-  background-color: #FF8303;
-  
-}
-.custom-btn:focus-within{
-  color:black;
-  background-color: white;
-}
-
-
-
-.custom-btn:hover{
-  color: #F4991A;
-  background-color: black;
-}
-
-.card{
-  border:3px solid black;
-}
-/*class to hide cards in menu*/
-.hide{
-  display: none;
-}
-.menu li{
-    padding-top: 3px;
-    
 }
