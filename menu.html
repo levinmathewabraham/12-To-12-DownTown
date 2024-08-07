@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Menu - 12 To 12 DownTown</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,15 +56,16 @@
   </section>
   <!-- Header section ends -->
   
+  <!-- Menu Section Begins -->
   <section id="menu-section" >
-    <!--background img-->
+    <!-- Background image -->
     <div class="background"></div>
     <div class="menuBarAndContents container-fluid" >
       <div class="row">
-        <!-- Sidebar -->
-        <nav id="sidebar" class="col-12 col-md-3 col-lg-2 bg-light sidebar">
-          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-            <button class="btn btn-secondary d-md-none mb-2" type="button" onclick="toggleSidebar()" data-bs-toggle="collapse" data-bs-target="#menuSidebar" aria-controls="menuSidebar" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Menu Sidebar -->
+        <nav id="sidebar" class="sidebar col-12 col-md-3 col-lg-2">
+          <div class="text-center offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            <button class="btn btn-secondary d-md-none mb-2" type="button" onclick="toggleSidebar()">
               <span class="navbar-toggler-icon"></span>
               Categories
             </button>
@@ -75,49 +76,49 @@
                   <button class="btn custom-btn w-100" type="button" onclick="showhideall()">All Items</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('soup'))">Soups</button>
+                  <button class="btn custom-btn w-100" data-target="soups" onclick="showhide(this)">Soups</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('noodles'))">Noodles</button>
+                  <button class="btn custom-btn w-100" data-target="noodles" onclick="showhide(this)">Noodles</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('appetizer'))">Appetizer</button>
+                  <button class="btn custom-btn w-100" data-target="appetizers" onclick="showhide(this)">Appetizer</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('salads'))">Salads</button>
+                  <button class="btn custom-btn w-100" data-target="salads" onclick="showhide(this)">Salads</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('breads'))">Breads</button>
+                  <button class="btn custom-btn w-100" data-target="breads" onclick="showhide(this)">Breads</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('muttoncurries'))">Mutton Curries</button>
+                  <button class="btn custom-btn w-100" data-target="muttonCurries" onclick="showhide(this)">Mutton Curries</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('chinesecurries'))">Chinese Curries</button>
+                  <button class="btn custom-btn w-100" data-target="chineseCurries" onclick="showhide(this)">Chinese Curries</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('ricebiriyani'))">Rice Biriyani</button>
+                  <button class="btn custom-btn w-100" data-target="riceBiriyani" onclick="showhide(this)">Rice Biriyani</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('chinesevegcurries'))">Chinese Veg Curries</button>
+                  <button class="btn custom-btn w-100" data-target="chineseVegCurries" onclick="showhide(this)">Chinese Veg Curries</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('indiancurries'))">Indian Curries</button>
+                  <button class="btn custom-btn w-100" data-target="indianCurries" onclick="showhide(this)">Indian Curries</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('beefvariety'))">Beef Variety</button>
+                  <button class="btn custom-btn w-100" data-target="beefVariety" onclick="showhide(this)">Beef Variety</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('seafoodspecial'))">Seafood Special</button>
+                  <button class="btn custom-btn w-100" data-target="seafoodSpecial" onclick="showhide(this)">Seafood Special</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('indianvegcurries'))">Indian Veg Curries</button>
+                  <button class="btn custom-btn w-100" data-target="indianVegCurries" onclick="showhide(this)">Indian Veg Curries</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('downtownspeacial'))">DownTown Special</button>
+                  <button class="btn custom-btn w-100" data-target="downtownSpecial" onclick="showhide(this)">DownTown Special</button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn custom-btn w-100" onclick="showhide(document.getElementById('charcoal'))">Charcoal</button>
+                  <button class="btn custom-btn w-100" data-target="charcoal" onclick="showhide(this)">Charcoal</button>
                 </li>
                 <!-- Add more categories as needed -->
               </ul>
@@ -127,13 +128,14 @@
 
         <!-- Menu display area -->
         <main class="col-12 col-md-9 ms-sm-auto col-lg-10 px-md-4 overflow-auto">
-          <div class="row items" id="soup">
+          <!-- Soups -->
+          <div class="row items" id="soups">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">SOUP</h3></center>
             <!-- Soup items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card mb-4" style="width: 16rem;">
-                <img src="images/seafoodsoup.png" class="card-img-fluid" alt="Seafood Soup">
+                <img src="images/seafoodsoup.png" class="card-img-top" alt="Seafood Soup">
                 <div class="card-body">
                   <h5 class="card-title">Seafood Soup</h5>
                   <p class="card-text">MRP: ₹150</p>
@@ -141,9 +143,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card mb-4" style="width: 16rem;">
-                <img src="images/tomyumsoup.png" class="card-img-fluid" alt="Tom Yum">
+                <img src="images/tomyumsoup.png" class="card-img-top" alt="Tom Yum">
                 <div class="card-body">
                   <h5 class="card-title">Tom Yum</h5>
                   <p class="card-text">MRP: ₹120</p>
@@ -151,9 +153,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\sweetcornsoup.png" class="card-img-fluid" alt="...">
+                <img src="images\sweetcornsoup.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">SWEET CORN SOUP</h5>
                   <p class="card-text">MRP: &#x20B9 100</p>
@@ -161,9 +163,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\hotsoursoup.png" class="card-img-fluid" alt="...">
+                <img src="images\hotsoursoup.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">HOT &amp;SOUR SOUP </h5>
                   <p class="card-text">MRP: &#x20B9 100</p>
@@ -171,9 +173,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\lumpom.png" class="card-img-fluid" alt="...">
+                <img src="images\lumpom.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">LUM POM SOUP </h5>
                   <p class="card-text">MRP: &#x20B9 100</p>
@@ -181,9 +183,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\monchowsoup.png" class="card-img-fluid" alt="...">
+                <img src="images\monchowsoup.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">MONCHOW SOUP</h5>
                   <p class="card-text">MRP: &#x20B9 100</p>
@@ -191,9 +193,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\creamofchicken.png" class="card-img-fluid" alt="...">
+                <img src="images\creamofchicken.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">CREAM OF CHICKEN</h5>
                   <p class="card-text">MRP: &#x20B9 120</p>
@@ -201,9 +203,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\creamofmushroom.png" class="card-img-fluid" alt="...">
+                <img src="images\creamofmushroom.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">CREAM OF MUSHROOM</h5>
                   <p class="card-text">MRP: &#x20B9 120</p>
@@ -211,9 +213,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\clearsoup.png" class="card-img-fluid" alt="...">
+                <img src="images\clearsoup.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">CLEAR SOUP VEG &amp; NON VEG</h5>
                   <p class="card-text">MRP: &#x20B9 100</p>
@@ -221,9 +223,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\lemonsoup.png" class="card-img-fluid" alt="...">
+                <img src="images\lemonsoup.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">LEMON SOUP </h5>
                   <p class="card-text">MRP: &#x20B9 100</p>
@@ -231,9 +233,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
-                <img src="images\creamoflemon.png" class="card-img-fluid" alt="...">
+                <img src="images\creamoflemon.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">CREAM OF LEMON SOUP </h5>
                   <p class="card-text">MRP: &#x20B9 120</p>
@@ -244,11 +246,12 @@
             <!-- More items here -->
           </div>
 
+          <!-- Noodles -->
           <div class="row items hide" id="noodles">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">NOODLES</h3></center>
             <!-- Noodles items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\chickennoodle.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -258,7 +261,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\muttonnoddle.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -268,7 +271,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\eggnoddle.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -278,7 +281,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\vegnoddle.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -288,7 +291,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\mixnoddle.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -298,7 +301,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\SZECHUANNODDLE.PNG" class="card-img-top" alt="...">
               <div class="card-body">
@@ -308,7 +311,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\chickentikkanoddle.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -318,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\singaporenoddles.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -328,7 +331,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\SHANGHINODDLES.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -338,7 +341,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\PRAWNNODDLES.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -348,7 +351,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\CHINESECHOPSUEY.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -358,7 +361,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
             <div class="card" style="width: 16rem;">
               <img src="images\AMERICANCHOPSUEY.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -371,11 +374,12 @@
             <!-- More items here -->
           </div>
 
-          <div class="row items hide" id="appetizer">
+          <!-- Appetizers -->
+          <div class="row items hide" id="appetizers">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">APPETIZER</h3></center>
             <!-- Appetizer items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\chickenlolipop.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -385,7 +389,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -395,7 +399,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\DOWN TOWN CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -405,7 +409,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KETHEL CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -415,7 +419,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKENMAJESTIC.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -425,7 +429,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CRISPY FRIED CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -435,7 +439,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANEER TIKKA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -445,7 +449,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\HONEY GLAZE VEG.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -455,7 +459,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN MANGOLIAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -465,7 +469,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KATHI CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -475,7 +479,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PRAWNS MAJESTIC.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -485,7 +489,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BAR BE QUE WINHS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -495,7 +499,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\HONEY GLAZE CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -505,7 +509,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANEER PAKKODA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -515,7 +519,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN PAKKODA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -525,7 +529,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\ARABIC PRAWNS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -535,7 +539,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PEPPER FRIED PRAWNS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -545,7 +549,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GOLDERN FRIED PRAWNS.png.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -555,7 +559,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\FISH FINGERS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -565,7 +569,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CALAMARI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -578,11 +582,12 @@
             <!-- More items here -->
           </div>
 
+          <!-- Salads -->
           <div class="row items hide" id="salads">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">SALADS</h3></center>
             <!-- Salads items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MIXED VEG SALAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -592,7 +597,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CUCUMBER SALAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -602,7 +607,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GREEN SALAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -612,7 +617,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\RUSSIAN SALAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -622,7 +627,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN HAWAIIAN SALAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -635,11 +640,12 @@
             <!-- More items here -->
           </div>
 
+          <!-- Breads -->
           <div class="row items hide" id="breads">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;"> BREADS</h3></center>
             <!-- Breads items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\TANDOORI ROTI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -649,7 +655,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\NAAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -659,7 +665,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GARLIC NAAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -669,7 +675,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BUTTER NAAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -679,7 +685,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHEESE NAAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -689,7 +695,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\ALOO KULCHA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -699,7 +705,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\VEG KULCHA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -709,7 +715,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\TANDOORI PARATHA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -719,7 +725,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\keemanaan.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -729,7 +735,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHAPPATHI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -739,7 +745,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KERALA POROTTA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -752,11 +758,12 @@
             <!-- More items here -->
           </div>
 
-          <div class="row items hide" id="muttoncurries">
+          <!-- Mutton Curries -->
+          <div class="row items hide" id="muttonCurries">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">MUTTON CURRIES</h3></center>
             <!-- Mutton curries items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUTTON JALFREZI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -766,7 +773,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUTTON VINDALOO.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -776,7 +783,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUTTON DOPIAZA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -786,7 +793,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUTTON ROBAN JOSH.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -796,7 +803,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUTTON MASALA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -806,7 +813,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUTTON PEPPER FRY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -819,11 +826,12 @@
             <!-- More items here -->
           </div>
           
-          <div class="row items hide" id="chinesecurries">
+          <!-- Chinese Curries -->
+          <div class="row items hide" id="chineseCurries">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">CHINESE CURRIES</h3></center>
             <!-- Breads items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHILLY CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -833,7 +841,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SCHEZWAN CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -843,7 +851,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN IN HOT CHILLY SAUCE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -853,7 +861,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SLICED CHICKEN WITH MUSHROOM.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -863,7 +871,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\DEVIL CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -873,7 +881,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN IN OYSTER SAUCE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -883,7 +891,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN IN SWEET GARLIC SAUCE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -893,7 +901,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PINEAPPLE CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -903,7 +911,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\EGG CHILLY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -913,7 +921,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GARLIC CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -923,7 +931,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -933,7 +941,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN MANCHURIAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -943,7 +951,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHILLY FISH.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -954,11 +962,13 @@
               </div>
             </div>
           </div>
-          <div class="row items hide" id="ricebiriyani">
+
+          <!-- Rice Biriyani -->
+          <div class="row items hide" id="riceBiriyani">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;"> RICE BIRIYANI</h3></center>
             <!-- Breads items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KARACHI BIRIYANI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -968,7 +978,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PRAWNS FRIED ICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -978,7 +988,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN FROED RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -988,7 +998,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\EGGVEGFRIED RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -998,7 +1008,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MIXED FRIED RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1008,7 +1018,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SZECHUAN FRIED ICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1018,7 +1028,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SIGNAPORE FRIED RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1028,7 +1038,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SHANGHAI FRIED RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1038,7 +1048,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KASMIRI PULAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1048,7 +1058,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CASHEWNUT PULAD.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1058,7 +1068,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN BIRIYANI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1068,7 +1078,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BBQ BIRIYANI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1079,11 +1089,13 @@
               </div>
             </div>
           </div>
-          <div class="row items hide" id="chinesevegcurries">
+
+          <!-- Chinese Veg Curries -->
+          <div class="row items hide" id="chineseVegCurries">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">CHINESE VEG CURRIES</h3></center>
             <!-- Chinese  items go here -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GOBI MANCHURIAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1093,7 +1105,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHILLY GOPI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1103,7 +1115,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANEER CHILLY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1113,7 +1125,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUSHROOM CHILLY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1123,7 +1135,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUSHROOM MANCHURIAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1133,7 +1145,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANEER MANCHURIAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1144,11 +1156,13 @@
               </div>
             </div>
           </div>
-          <div class="row items" id="indiancurries">
+
+          <!-- Indian Curries -->
+          <div class="row items" id="indianCurries">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">INDIAN CURRIES</h3></center>
             <!-- Indian Curries -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BUTTER CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1158,7 +1172,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN ROGAN JOSH.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1168,7 +1182,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN JAFREZI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1178,7 +1192,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN DOPIAZA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1188,7 +1202,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN PALAK.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1198,7 +1212,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\EGG MASALA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1208,7 +1222,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\AFGENI CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1218,7 +1232,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANJABI CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1228,7 +1242,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHIKKEN TIKKA MASALA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1238,7 +1252,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHETTINAD.PNG" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1248,7 +1262,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\HYDERABADI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1258,7 +1272,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN MAHARAJA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1271,12 +1285,11 @@
           </div>
 
           <!-- Beef Variety -->
-
-          <div class="row items" id="beefvariety">
+          <div class="row items" id="beefVariety">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">BEEF VARIETY</h3></center>
             <!-- Beef Variety -->
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF PEPPER FRY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1286,7 +1299,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHILLY BEEF.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1296,7 +1309,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF ROAST.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1306,7 +1319,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MEXICAN BEEF.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1316,7 +1329,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF IN OYSTER SAUCE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1326,7 +1339,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\beef.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1336,7 +1349,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF CHILLY PEPPER.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1346,7 +1359,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF MANGOLIAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1356,7 +1369,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF DRY FRY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1366,7 +1379,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SLICED BEEF WITH MUSHROOM.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1376,7 +1389,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF IN BLACK BEAN SAUCE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1389,10 +1402,10 @@
           </div>
 
           <!-- Seafood Specials -->
-          <div class="row items" id="seafoodspecial">
+          <div class="row items" id="seafoodSpecial">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center> <h3 style="color: white;">SEA FOOD SPEACIALS</h3></center>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PRAWNS FRYTAWA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1402,7 +1415,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MIX SEAFOOD GRILL.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1412,7 +1425,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\FISH FRYTAWA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1422,7 +1435,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CRAB.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1432,7 +1445,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BABY OCTOPUS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1442,7 +1455,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GRILLED FISH.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1452,7 +1465,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUSSELS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1462,7 +1475,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SQUID.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1475,10 +1488,10 @@
           </div>
 
           <!-- Indian Veg Curries -->
-          <div class="row items" id="indianvegcurries">
+          <div class="row items" id="indianVegCurries">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">INDIAN VEG CURRIES</h3></center>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANEER BUTTER MASALA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1488,7 +1501,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PANEER KOFTA CURRY.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1498,7 +1511,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MIXED VEG KORMA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1508,7 +1521,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\ALPP GOPI MASALA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1518,7 +1531,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MUSHROOM MUTTER MASALA.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1528,7 +1541,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\VEGITARIAN CHETTINADU.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1538,7 +1551,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\VEG KADAI.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1550,11 +1563,11 @@
             </div>
           </div>
 
-          <!-- DownTown Specials -->
-          <div class="row items" id="downtownspeacial">
+          <!-- DownTown Special -->
+          <div class="row items" id="downtownSpecial">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">DOWN TOWN SPEACIALS</h3></center>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SULTHANA FRIED RICECHICKENVEG.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1564,7 +1577,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BURNT FRIED RICE COMBO.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1574,7 +1587,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\ARABIC RICE WITH MEXICAN CHICKEN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1584,7 +1597,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SIMILA RICE WITH MEXICAN BEEF.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1594,7 +1607,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\ARABIC GRILL WITH GARLIC RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1604,7 +1617,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BEEF OYSTER WITH RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1614,7 +1627,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN OYSTER WITH RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1624,7 +1637,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\DRAGON CHICKEN WITH RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1634,7 +1647,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\MILITARY CHICKEN WITH GARLIC RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1644,7 +1657,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KETHAL CHICKEN WITH GHEE RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1664,7 +1677,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\DOWN TOWN SPECIAL NOODLES.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1674,7 +1687,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\PRAWN RED CURRY WITH PLAIN RICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1684,7 +1697,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KEBAB WITH ROTIRICE.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1700,7 +1713,7 @@
           <div class="row items" id="charcoal">
             <hr style=" border-top: 20px dotted #F4991A;">
             <center><h3 style="color: white;">CHARCOAL</h3></center>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\BARBE QUE WITH NAAN.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1710,7 +1723,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\FISH BBQ.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1720,7 +1733,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\AL FAHAM HALF.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1730,7 +1743,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\SHAWAI HALF.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1740,7 +1753,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\GRILLED CHICKEN FULL.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1750,7 +1763,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\THANDOORI CHICKEN HALF.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1760,7 +1773,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\CHICKEN TIKKAS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1770,7 +1783,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KEBABS.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1780,7 +1793,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\KALMI KEBAB.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1790,7 +1803,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\LASUNI KEBAB.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1800,7 +1813,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
               <div class="card" style="width: 16rem;">
                 <img src="images\NOORANI KEBAB.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -1816,15 +1829,19 @@
       </div>
     </div>
   </section>
+  <!-- Menu Section Ends -->
 
   <!-- Footer section begins -->
   <section id="footer-section">
     <footer>
         <div class="container">
             <div class="row">
-              <h5>Disclaimer: These pictures are used for visual reprenation of the food, actual presentation and look of the food may vary.</h5>
+              <h6>Disclaimer: These pictures are used for visual representation of the food. Actual presentation and look of the food may vary.</h6>
                 <p>&copy; 2024 12 To 12 DownTown. All Rights Reserved.<br>
-                    Designed by AEL Freelancing.
+                  Designed by 
+                  <a href="https://www.linkedin.com/in/adithrajn/" style="text-decoration: none;">Adithraj N</a>, 
+                  <a href="https://www.linkedin.com/in/emil-sunny-4baaa527b/" style="text-decoration: none;">Emil Sunny</a>, & 
+                  <a href="https://www.linkedin.com/in/levinmathewabraham" style="text-decoration: none;">Levin M Abraham</a>.
                 </p>
             </div>
         </div>
