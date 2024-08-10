@@ -22,17 +22,22 @@
 }
 
 /* Header Section Begins */
-.navbar {
-    background-color: #321313;
+.logo-img {
+    width: 160px;
 }
 
-.navbar-brand {
-    color: white;
-    font-size: 1.5rem;
+.navbar {
+    background-color: white;
+    padding: 1px 15px;
+    box-shadow: 0px 2px 5px rgba(50, 19, 19, 0.4);
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .nav-link {
-    color: white;
+    color: #321313;
 }
 
 .nav-link:hover {
@@ -40,21 +45,35 @@
 }
 
 .book-button {
-    background-color: #FF8303;
+    background-color: #321313;
     color: white;
     border-radius: 5px;
     padding: 0.5rem 1rem;
 }
 
 .book-button:hover {
-    background-color: #F4991A;
-    color: black;
+    background-color: red;
+    color: white;
 }
 
 @media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
     .navbar-brand {
-        margin: 0 auto;
-        text-align: center;
+        margin-left: 0;
+    }
+
+    .collapse {
+        background-color: white;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
     }
 
     .book-button {
@@ -69,14 +88,9 @@
 /* Menu Section Begins */
 .custom-btn{
     color: white;
-    background-color: #FF8303;
+    text-align: left;
 }
-  
-.custom-btn:focus-within{
-    color:black;
-    background-color: white;
-}
-  
+
 .custom-btn:hover{
     color: #F4991A;
     background-color: black;
@@ -126,11 +140,12 @@
 }
 
 .menuBarAndContents {
-    margin-top: 6rem;
+    margin-top: 6.2rem;
     padding-left: 0px;
 }
 
 #menuSidebar {
+    background-color: #1B1A17;
     z-index: 2;
     position: relative;
 }
