@@ -1,21 +1,28 @@
 var menusection = document.querySelectorAll(".items");
 var sidebar = document.getElementById('menuSidebar');
 
-function showhide(item){
-  menusection.forEach(section => section.classList.add('hide'));
-  item.classList.remove('hide');
-
-  if (window.innerWidth <= 768) {
-    sidebar.classList.remove('show');
-  }
-}
-
 //Show all menu categories
 function showhideall() {
   menusection.forEach(section => section.classList.remove('hide'));
 
   //Collapse sidebar menu in mobile view
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1024) {
+    sidebar.classList.remove('show');
+  }
+}
+
+//Toggle sidebar menu visibility in mobile view
+function toggleSidebar() {
+  if (window.innerWidth <= 1024) {
+    sidebar.classList.toggle('show');
+  }
+}
+
+function showhide(item){
+  menusection.forEach(section => section.classList.add('hide'));
+  item.classList.remove('hide');
+
+  if (window.innerWidth <= 1024) {
     sidebar.classList.remove('show');
   }
 }
@@ -29,20 +36,13 @@ function showhide(button) {
   item.classList.remove('hide');
 
   //Collapse sidebar menu in mobile view
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1024) {
     sidebar.classList.remove('show');
   }
 }
 
-//Toggle sidebar menu visibility in mobile view
-function toggleSidebar() {
-  if (window.innerWidth <= 768) {
-    sidebar.classList.toggle('show');
-  }
-}
-
 window.addEventListener('resize', function() {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1024) {
     sidebar.classList.add('show');
   } else {
     sidebar.classList.remove('show');

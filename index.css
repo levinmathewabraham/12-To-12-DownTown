@@ -1,3 +1,7 @@
+body {
+    font-family: "Public Sans", sans-serif;
+}
+
 /* Site Background */
 .background {
     position: fixed;
@@ -37,22 +41,22 @@
 }
 
 .nav-link {
-    color: #321313;
+    color: red;
 }
 
 .nav-link:hover {
-    color: #F4991A;
+    color: #321313;
 }
 
 .book-button {
-    background-color: #321313;
+    background-color: red;
     color: white;
     border-radius: 5px;
     padding: 0.5rem 1rem;
 }
 
 .book-button:hover {
-    background-color: red;
+    background-color: #321313;
     color: white;
 }
 
@@ -85,23 +89,73 @@
 }
 /* Header Section Ends */
 
-/* Menu Section Begins */
-.custom-btn{
+/* Home Section Begins */
+.home-background {
+    height: 100vh;
+}
+/* Home Section Ends */
+
+/* Menu Section - Home Begins */
+.explore-menu-btn {
+    background-color: #321313;
+    border: 1px solid #270f0f;
+    text-decoration: none;
     color: white;
+}
+
+.explore-menu-btn:hover {
+    background-color: #FF8303;
+}
+/* Menu Section - Home Ends */
+
+/* Menu Section - Main Begins */
+#sidebar {
+    background-color: black;
+    height: calc(100vh - 70px); /* Adjust height relative to navbar*/
+    position: sticky;
+    top: 70px;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+.menuBarAndContents {
+    margin-top: 6.2rem;
+    padding: 0;
+}
+
+#menuSidebar {
+    background-color: white;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+}
+
+.custom-btn{
+    color: #321313;
     text-align: left;
 }
 
 .custom-btn:hover{
-    color: #F4991A;
-    background-color: black;
+    color: white;
+    background-color: #321313;
+}
+
+.hr-line {
+    border-top: 20px dotted #F4991A;
+}
+
+.food-variety {
+    color: white;
+    font-size: 50px;
 }
 
 .card{
-    border:3px solid black;
+    border: 3px solid #321313;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    width: 16rem;
 }
 
 .card-img-top {
@@ -130,30 +184,27 @@
     padding-top: 3px;
 }
 
-#sidebar {
-    background-color: #1B1A17;
-    height: calc(100vh - 70px); /* Adjust height relative to navbar*/
-    position: sticky;
-    top: 70px;
-    z-index: 2;
-    overflow-y: auto;
-}
-
-.menuBarAndContents {
-    margin-top: 6.2rem;
-    padding-left: 0px;
-}
-
-#menuSidebar {
-    background-color: #1B1A17;
-    z-index: 2;
-    position: relative;
-}
-
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .categories-btn {
+        display: block;
+        width: 80%;
+        margin: auto;
+        background-color: #321313;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .categories-btn:hover {
+        background-color: #FF8303;
+        color: white;
+    }
+
     .card {
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
 
     #sidebar {
@@ -179,12 +230,7 @@ main {
     z-index: 2;
     padding-top: 1rem;
 }
-/* Menu Section Ends */
-
-/* Home Section Begins */
-.home-background {
-    height: 100vh;
-}
+/* Menu Section - Main Ends */
 
 /* Testimonial Section Begins */
 .testimonials {
@@ -211,7 +257,10 @@ main {
 
 .about-content{
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-img {
+    width: 95%;
 }
 /* About Section Ends */
 
@@ -225,12 +274,22 @@ main {
 }
 /* Contact Section Ends */
 
-/* Footer Section */
+/* Footer Section Begins */
 footer {
-    background-color: #321313;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     padding-top: 10px;
     bottom: 0;
     width: 100%;
 }
+
+.designer-names {
+    text-decoration: none;
+    color: red;
+}
+
+.designer-names:hover {
+    color: #321313;
+}
+/* Footer Section Ends */
