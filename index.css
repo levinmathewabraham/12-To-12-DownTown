@@ -9,7 +9,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./images/cover.jpg);
+    background: rgba(50, 19, 19, 0.4) url(./images/cover.jpg) no-repeat center;
     background-size: cover;
     z-index: -1;
 }
@@ -22,7 +22,7 @@ body {
     background: rgba(50, 19, 19, 0.4);
     padding: 20px;
     border-radius: 10px;
-    margin:20px;
+    margin: 20px;
 }
 
 /* Header Section Begins */
@@ -125,7 +125,7 @@ body {
 
 #menuSidebar {
     background-color: white;
-    z-index: 2;
+    z-index: 3;
     border-radius: 5px;
     position: relative;
 }
@@ -133,6 +133,7 @@ body {
 .custom-btn{
     color: #321313;
     text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-btn:hover{

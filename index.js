@@ -1,5 +1,7 @@
 var menusection = document.querySelectorAll(".items");
 var sidebar = document.getElementById('menuSidebar');
+var navbarCollapse = document.getElementById('navbarSupportedContent');
+var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
 //Show all menu categories
 function showhideall() {
@@ -18,15 +20,6 @@ function toggleSidebar() {
   }
 }
 
-function showhide(item){
-  menusection.forEach(section => section.classList.add('hide'));
-  item.classList.remove('hide');
-
-  if (window.innerWidth <= 1024) {
-    sidebar.classList.remove('show');
-  }
-}
-
 //Show or hide specific menu categories based on the category clicked
 function showhide(button) {
   var targetId = button.getAttribute('data-target');
@@ -40,6 +33,14 @@ function showhide(button) {
     sidebar.classList.remove('show');
   }
 }
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    if (window.innerWidth <= 1024) {
+      navbarCollapse.classList.remove('show');
+    }
+  });
+});
 
 window.addEventListener('resize', function() {
   if (window.innerWidth > 1024) {
