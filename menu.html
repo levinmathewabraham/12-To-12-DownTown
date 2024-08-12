@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - 12 To 12 DownTown</title>
+  <link rel="icon" href="./images/downtown-logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header section begins -->
+    <section id="header-section">
+      <header>
+          <div class="container">
+              <nav class="navbar navbar-expand-md fixed-top">
+                  <!-- Navbar container begins -->
+                  <div class="container-fluid">
+                      <div class="d-flex justify-content-between align-items-center w-100">
+                          <!-- Restaurant logo -->
+                          <a href="./index.html"><img class="logo-img" src="./images/downtown-logo.png" alt=""></a>
+                          <!-- Navbar menu items begin -->
+                          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                              <ul class="navbar-nav nav nav-underline mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="./index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#menu-section">Menu</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="./index.html">Testimonial</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="./index.html">About</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="./index.html">Contact</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <a class="book-button nav-link me-3 d-none d-md-block" href="#">Book Table</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <!-- Navbar menu items end -->
+                      </div>
+                  </div>
+                  <!-- Navbar container ends -->
+              </nav>
+          </div>
+      </header>
+  </section>
+  <!-- Header section ends -->
+  
+  <!-- Menu Section Begins -->
+  <section id="menu-section" >
+    <!-- Background image -->
+    <div class="background"></div>
+    <div class="menuBarAndContents container-fluid">
+      <div class="row m-0">
+        <!-- Menu Sidebar -->
+        <nav id="sidebar" class="sidebar col-12 col-md-3 col-lg-2">
+          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            <button class="categories-btn btn btn-secondary dropdown-toggle d-md-none mb-2" type="button" onclick="toggleSidebar()" aria-label="Toggle Categories">
+              <span class="navbar-toggler-icon"></span>
+              Categories
+            </button>
+            <!-- Collapsible sidebar content -->
+            <div id="menuSidebar" class="collapse d-md-block">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" type="button" onclick="showhideall()">All Items</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="soups" onclick="showhide(this)">Soups</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="noodles" onclick="showhide(this)">Noodles</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="appetizers" onclick="showhide(this)">Appetizer</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="salads" onclick="showhide(this)">Salads</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="breads" onclick="showhide(this)">Breads</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="muttonCurries" onclick="showhide(this)">Mutton Curries</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="chineseCurries" onclick="showhide(this)">Chinese Curries</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="chineseVegCurries" onclick="showhide(this)">Chinese Veg Curries</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="indianCurries" onclick="showhide(this)">Indian Curries</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="riceBiriyani" onclick="showhide(this)">Rice Biriyani</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="beefVariety" onclick="showhide(this)">Beef Variety</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="seafoodSpecial" onclick="showhide(this)">Seafood Special</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="indianVegCurries" onclick="showhide(this)">Indian Veg Curries</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="downtownSpecial" onclick="showhide(this)">DownTown Special</button>
+                </li>
+                <li class="nav-item">
+                  <button class="btn custom-btn w-100" data-target="charcoal" onclick="showhide(this)">Charcoal</button>
+                </li>
+                <!-- Add more categories as needed -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Menu display area -->
+        <main class="col-12 col-md-9 ms-sm-auto col-lg-10 px-md-4 overflow-auto">
+          <!-- Soups -->
+          <div class="row items " id="soups">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">SOUP</h3></center>
+            <!-- Soup items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images/seafoodsoup.png" class="card-img-top" alt="Seafood Soup">
+                <div class="card-body">
+                  <h5 class="card-title">SEAFOOD SOUP</h5>
+                  <p class="card-text">MRP: &#x20B9 150</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images/tomyumsoup.png" class="card-img-top" alt="Tom Yum">
+                <div class="card-body">
+                  <h5 class="card-title">TOM YUM</h5>
+                  <p class="card-text">MRP: &#x20B9 120</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\sweetcornsoup.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SWEET CORN SOUP</h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\hotsoursoup.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HOT & SOUR SOUP </h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\lumpom.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">LUM POM SOUP </h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\monchowsoup.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MANCHOW SOUP</h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\creamofchicken.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CREAM OF CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 120</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\creamofmushroom.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CREAM OF MUSHROOM</h5>
+                  <p class="card-text">MRP: &#x20B9 120</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\clearsoup.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CLEAR SOUP VEG & NON VEG</h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\lemonsoup.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">LEMON SOUP</h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\creamoflemon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CREAM OF LEMON</h5>
+                  <p class="card-text">MRP: &#x20B9 120</p>
+                </div>
+              </div>
+            </div>
+            <!-- More items here -->
+          </div>
+
+          <!-- Noodles -->
+          <div class="row items" id="noodles">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">NOODLES</h3></center>
+            <!-- Noodles items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\chickennoodle.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CHICKEN NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 190</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\muttonnoddle.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MUTTON NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 300</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\eggnoddle.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">EGG NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 180</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\vegnoddle.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">VEG. NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 170</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\mixnoddle.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MIX NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\SZECHUANNODDLE.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SZECHUAN NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\chickentikkanoddle.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CHICKEN TIKKA NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 200</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\singaporenoddles.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SINGAPORE NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 250</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\SHANGHINODDLES.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SHANGHAI NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 100</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\PRAWNNODDLES.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PRAWNS NOODLES</h5>
+                <p class="card-text">MRP: &#x20B9 280</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\CHINESECHOPSUEY.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CHINESE CHOP SUEY</h5>
+                <p class="card-text">MRP: &#x20B9 220</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card">
+              <img src="images\AMERICANCHOPSUEY.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">AMERICAN CHOP SUEY</h5>
+                <p class="card-text">MRP: &#x20B9 220</p>
+              </div>
+            </div>
+          </div>
+            <!-- More items here -->
+          </div>
+
+          <!-- Appetizers -->
+          <div class="row items" id="appetizers">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">APPETIZER</h3></center>
+            <!-- Appetizer items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\chickenlolipop.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN LOLLIPOP</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">WALA CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\DOWN TOWN CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DOWN TOWN CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KETHEL CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KETHEL CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKENMAJESTIC.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN MAJESTIC</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CRISPY FRIED CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CRISPY FRIED CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PANEER TIKKA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANEER TIKKA</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\HONEY GLAZE VEG.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HONEY GLAZE VEG</h5>
+                  <p class="card-text">MRP: &#x20B9 220</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN MANGOLIAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN MANGOLIAN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KATHI CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KATHI CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PRAWNS MAJESTIC.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PRAWNS MAJESTIC</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BAR BE QUE WINHS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BARBEQUE WINGS</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\HONEY GLAZE CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HONEY GLAZE CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PANEER PAKKODA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANEER PAKKODA</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN PAKKODA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN PAKKODA</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\ARABIC PRAWNS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ARABIC PRAWNS</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PEPPER FRIED PRAWNS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PEPPER FRIED PRAWNS</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GOLDERN FRIED PRAWNS.png.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GOLDERN FRIED PRAWNS</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\FISH FINGERS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FISH FINGERS</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CALAMARI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CALAMARI</h5>
+                  <p class="card-text">MRP: &#x20B9 340</p>
+                </div>
+              </div>
+            </div>
+            <!-- More items here -->
+          </div>
+
+          <!-- Salads -->
+          <div class="row items" id="salads">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">SALADS</h3></center>
+            <!-- Salads items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MIXED VEG SALAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MIXED VEG SALAD</h5>
+                  <p class="card-text">MRP: &#x20B9 80</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CUCUMBER SALAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CUCUMBER SALAD</h5>
+                  <p class="card-text">MRP: &#x20B9 80</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GREEN SALAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GREEN SALAD</h5>
+                  <p class="card-text">MRP: &#x20B9 80</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\RUSSIAN SALAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">RUSSIAN SALAD</h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN HAWAIIAN SALAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN HAWAIIAN SALAD</h5>
+                  <p class="card-text">MRP: &#x20B9 100</p>
+                </div>
+              </div>
+            </div>
+            <!-- More items here -->
+          </div>
+
+          <!-- Breads -->
+          <div class="row items" id="breads">
+            <hr class="hr-line">
+            <center><h3 class="food-variety"> BREADS</h3></center>
+            <!-- Breads items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\TANDOORI ROTI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TANDOORI ROTI</h5>
+                  <p class="card-text">MRP: &#x20B9 25</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\NAAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">NAAN</h5>
+                  <p class="card-text">MRP: &#x20B9 25</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GARLIC NAAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GARLIC NAAN</h5>
+                  <p class="card-text">MRP: &#x20B9 30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BUTTER NAAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BUTTER NAAN</h5>
+                  <p class="card-text">MRP: &#x20B9 30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHEESE NAAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHEESE NAAN</h5>
+                  <p class="card-text">MRP: &#x20B9 35</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\ALOO KULCHA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ALOO KULCHA</h5>
+                  <p class="card-text">MRP: &#x20B9 35</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\VEG KULCHA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">VEG KULCHA</h5>
+                  <p class="card-text">MRP: &#x20B9 35</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\TANDOORI PARATHA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TANDOORI PARATHA</h5>
+                  <p class="card-text">MRP: &#x20B9 30</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\keemanaan.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KEEMA NAAN</h5>
+                  <p class="card-text">MRP: &#x20B9 55</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHAPPATHI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHAPPATHI</h5>
+                  <p class="card-text">MRP: &#x20B9 15</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KERALA POROTTA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KERALA POROTTA</h5>
+                  <p class="card-text">MRP: &#x20B9 18</p>
+                </div>
+              </div>
+            </div>
+            <!-- More items here -->
+          </div>
+
+          <!-- Mutton Curries -->
+          <div class="row items" id="muttonCurries">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">MUTTON CURRIES</h3></center>
+            <!-- Mutton curries items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUTTON JALFREZI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUTTON JALFREZI</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUTTON VINDALOO.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUTTON VINDALOO</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUTTON DOPIAZA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUTTON DOPIAZA</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUTTON ROBAN JOSH.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUTTON ROBAN JOSH</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUTTON MASALA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUTTON MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUTTON PEPPER FRY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUTTON PEPPER FRY</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <!-- More items here -->
+          </div>
+          
+          <!-- Chinese Curries -->
+          <div class="row items " id="chineseCurries">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">CHINESE CURRIES</h3></center>
+            <!-- Breads items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHILLY CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHILLY CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SCHEZWAN CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SCHEZWAN CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN IN HOT CHILLY SAUCE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN IN HOT CHILLY SAUCE</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SLICED CHICKEN WITH MUSHROOM.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SLICED CHICKEN WITH MUSHROOM BAMBOO SHOOT</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\DEVIL CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DEVIL CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN IN OYSTER SAUCE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN IN OYSTER SAUCE</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN IN SWEET GARLIC SAUCE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN IN SWEET GARLIC SAUCE</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PINEAPPLE CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PINEAPPLE CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\EGG CHILLY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">EGG CHILLY</h5>
+                  <p class="card-text">MRP: &#x20B9 160</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GARLIC CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GARLIC CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\WALA CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GINGER CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN MANCHURIAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN MANCHURIAN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHILLY FISH.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHILLY FISH</h5>
+                  <p class="card-text">MRP: &#x20B9 320</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chinese Veg Curries -->
+          <div class="row items" id="chineseVegCurries">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">CHINESE VEG CURRIES</h3></center>
+            <!-- Chinese  items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GOBI MANCHURIAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GOBI MANCHURIAN</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHILLY GOPI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHILLY GOBI</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PANEER CHILLY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANEER CHILLY</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUSHROOM CHILLY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUSHROOM CHILLY</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUSHROOM MANCHURIAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUSHROOM MANCHURIAN</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PANEER MANCHURIAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANEER MANCHURIAN</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Indian Curries -->
+          <div class="row items" id="indianCurries">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">INDIAN CURRIES</h3></center>
+            <!-- Indian Curries -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BUTTER CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BUTTER CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN ROGAN JOSH.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN ROGAN JOSH</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN JAFREZI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN JALFREZI</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN DOPIAZA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN DOPIAZA</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN PALAK.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN PALAK</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\EGG MASALA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">EGG MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\AFGENI CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AFGHANI CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images/PUNJABI CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PUNJABI CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHIKKEN TIKKA MASALA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN TIKKA MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHETTINAD.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN CHETTINADU</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\HYDERABADI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN HYDERABADI</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN MAHARAJA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN MAHARAJA</h5>
+                  <p class="card-text">MRP: &#x20B9 230</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rice Biriyani -->
+          <div class="row items" id="riceBiriyani">
+            <hr class="hr-line">
+            <center><h3 class="food-variety"> RICE BIRIYANI</h3></center>
+            <!-- Breads items go here -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KARACHI BIRIYANI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KARACHI BIRIYANI</h5>
+                  <p class="card-text">MRP: &#x20B9 250</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PRAWNS FRIED ICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PRAWNS FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN FROED RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\EGGVEGFRIED RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">EGG/VEG.FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 160</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MIXED FRIED RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MIXED FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 190</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SZECHUAN FRIED ICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SZECHUAN FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 190</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SIGNAPORE FRIED RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SINGAPORE FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 190</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SHANGHAI FRIED RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SHANGHAI FRIED RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 190</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KASMIRI PULAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KASMIRI PULAO</h5>
+                  <p class="card-text">MRP: &#x20B9 190</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CASHEWNUT PULAD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CASHEWNUT PULAO</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN BIRIYANI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN BIRIYANI</h5>
+                  <p class="card-text">MRP: &#x20B9 180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BBQ BIRIYANI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BBQ BIRIYANI</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beef Variety -->
+          <div class="row items" id="beefVariety">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">BEEF VARIETY</h3></center>
+            <!-- Beef Variety -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF PEPPER FRY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF PEPPER FRY</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHILLY BEEF.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHILLY BEEF</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF ROAST.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF ROAST</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MEXICAN BEEF.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MEXICAN BEEF</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF IN OYSTER SAUCE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF IN OYSTER SAUCE</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\beef.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF PEPPER MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF CHILLY PEPPER.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF CHILLY PEPPER</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF MANGOLIAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF MANGOLIAN</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF DRY FRY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF DRY FRY</h5>
+                  <p class="card-text">MRP: &#x20B9 250</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SLICED BEEF WITH MUSHROOM.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SLICED BEEF WITH MUSHROOM BAMBOO SHOOT </h5>
+                  <p class="card-text">MRP: &#x20B9 250</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF IN BLACK BEAN SAUCE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF IN BLACK BEAN SAUCE </h5>
+                  <p class="card-text">MRP: &#x20B9 250</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seafood Specials -->
+          <div class="row items" id="seafoodSpecial">
+            <hr class="hr-line">
+            <center> <h3 class="food-variety">SEA FOOD SPECIALS</h3></center>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PRAWNS FRYTAWA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PRAWNS FRY / TAWA</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MIX SEAFOOD GRILL.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MIX SEAFOOD GRILL</h5>
+                  <p class="card-text">MRP: &#x20B9 500 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\FISH FRYTAWA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FISH FRY/ TAWA</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CRAB.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CRAB</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BABY OCTOPUS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BABY OCTOPUS</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GRILLED FISH.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GRILLED FISH</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUSSELS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUSSELS</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SQUID.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SQUID</h5>
+                  <p class="card-text">MRP: &#x20B9 200 / 1000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Indian Veg Curries -->
+          <div class="row items" id="indianVegCurries">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">INDIAN VEG CURRIES</h3></center>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PANEER BUTTER MASALA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANEER BUTTER MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PANEER KOFTA CURRY.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANEER KOFTA CURRY</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MIXED VEG KORMA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MIXED VEG KORMA</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\ALPP GOPI MASALA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ALOO GOPI MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MUSHROOM MUTTER MASALA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MUSHROOM MUTTER MASALA</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\VEGITARIAN CHETTINADU.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">VEGETARIAN CHETTINADU</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\VEG KADAI.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">VEG KADAI</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DownTown Special -->
+          <div class="row items" id="downtownSpecial">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">DOWNTOWN SPEACIALS</h3></center>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SULTHANA FRIED RICECHICKENVEG.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SULTHANA FRIED RICE(CHICKEN/VEG)</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BURNT FRIED RICE COMBO.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BURNT FRIED RICE COMBO</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\ARABIC RICE WITH MEXICAN CHICKEN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ARABIC RICE WITH MEXICAN CHICKEN</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SIMILA RICE WITH MEXICAN BEEF.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SIMLA RICE WITH MEXICAN BEEF</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\ARABIC GRILL WITH GARLIC RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ARABIC GRILL WITH GARLIC RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BEEF OYSTER WITH RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BEEF OYSTER WITH RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN OYSTER WITH RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN OYSTER WITH RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\DRAGON CHICKEN WITH RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DRAGON CHICKEN WITH RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\MILITARY CHICKEN WITH GARLIC RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MILITARY CHICKEN WITH GARLIC RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KETHAL CHICKEN WITH GHEE RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KETHAL CHICKEN WITH GHEE RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\HONEY GLAZE CHICKEN WITH RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HONEY GLAZE CHICKEN WITH RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\DOWN TOWN SPECIAL NOODLES.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DOWNTOWN SPECIAL NOODLES</h5>
+                  <p class="card-text">MRP: &#x20B9 300</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\PRAWN RED CURRY WITH PLAIN RICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PRAWN RED CURRY WITH PLAIN RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 350</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KEBAB WITH ROTIRICE.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KEBAB WITH ROTI/RICE</h5>
+                  <p class="card-text">MRP: &#x20B9 270</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charcoal -->
+          <div class="row items" id="charcoal">
+            <hr class="hr-line">
+            <center><h3 class="food-variety">CHARCOAL</h3></center>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\BARBE QUE WITH NAAN.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BAR-B-QUE WITH NAAN</h5>
+                  <p class="card-text">MRP: &#x20B9 200</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\FISH BBQ.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FISH BBQ</h5>
+                  <p class="card-text">MRP: &#x20B9 320</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\AL FAHAM HALF.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AL FAHAM HALF / FULL</h5>
+                  <p class="card-text">MRP: &#x20B9 360 / 700</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\SHAWAI HALF.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SHAWAI HALF</h5>
+                  <p class="card-text">MRP: &#x20B9 220</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\GRILLED CHICKEN FULL.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">GRILLED CHICKEN FULL</h5>
+                  <p class="card-text">MRP: &#x20B9 400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\THANDOORI CHICKEN HALF.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">TANDOORI CHICKEN HALF / FULL</h5>
+                  <p class="card-text">MRP: &#x20B9 220 / 400</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\CHICKEN TIKKAS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CHICKEN TIKKAS</h5>
+                  <p class="card-text">MRP: &#x20B9 240</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KEBABS.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KEBABS</h5>
+                  <p class="card-text">MRP: &#x20B9 220</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\KALMI KEBAB.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">KALMI KEBAB</h5>
+                  <p class="card-text">MRP: &#x20B9 220</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\LASUNI KEBAB.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">LASUNI KEBAB</h5>
+                  <p class="card-text">MRP: &#x20B9 220</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+              <div class="card">
+                <img src="images\NOORANI KEBAB.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">NOORANI KEBAB</h5>
+                  <p class="card-text">MRP: &#x20B9 220</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more sections as needed -->
+        </main>
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section Ends -->
+
+  <!-- Footer section begins -->
+  <section id="footer-section">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <h6>Disclaimer: These pictures are used for visual representation of the food. Actual presentation and look of the food may vary.</h6>
+                <p>&copy; 2024 12 To 12 DownTown. All Rights Reserved.<br>
+                  Designed by 
+                  <a class="designer-names" href="https://www.linkedin.com/in/levinmathewabraham">Levin M Abraham</a>, 
+                  <a class="designer-names" href="https://www.linkedin.com/in/adithrajn/">Adithraj N</a>, & 
+                  <a class="designer-names" href="https://www.linkedin.com/in/emil-sunny-4baaa527b/">Emil Sunny</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+  </section>
+  <!-- Footer section ends -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>

@@ -1,54 +1,271 @@
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+/* Site Background */
 .background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./images/cover.jpg);
+    background: rgba(50, 19, 19, 0.4) url(./images/cover.jpg) no-repeat center;
     background-size: cover;
-    filter: blur(3px);
     z-index: -1;
 }
 
+/* Site Content - Main */
 .content {
     position: relative;
     z-index: 1;
     color: white;
+    background: rgba(50, 19, 19, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
 }
 
-/* Header */
+/* Header Section Begins */
+.logo-img {
+    width: 160px;
+}
+
 .navbar {
-    background-color: #F0E3CA;
+    background-color: white;
+    padding: 1px 15px;
+    box-shadow: 0px 2px 5px rgba(50, 19, 19, 0.4);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: red;
+}
+
+.nav-link:hover {
+    color: #321313;
 }
 
 .book-button {
-    display: inline-block;
-    background-color: #FF8303;
-    color: black;
+    background-color: red;
+    color: white;
     border-radius: 5px;
+    padding: 0.5rem 1rem;
 }
 
-/* Home Section */
+.book-button:hover {
+    background-color: #321313;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+    }
+
+    .collapse {
+        background-color: white;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .book-button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+/* Header Section Ends */
+
+/* Home Section Begins */
 .home-background {
     height: 100vh;
 }
+/* Home Section Ends */
 
-/* Testimonial Section */
+/* Menu Section - Home Begins */
+.explore-menu-btn {
+    background-color: #321313;
+    border: 1px solid #270f0f;
+    text-decoration: none;
+    color: white;
+}
+
+.explore-menu-btn:hover {
+    background-color: #FF8303;
+}
+/* Menu Section - Home Ends */
+
+/* Menu Section - Main Begins */
+#sidebar {
+    background-color: black;
+    height: calc(100vh - 70px); /* Adjust height relative to navbar*/
+    position: sticky;
+    top: 70px;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+.menuBarAndContents {
+    margin-top: 6.2rem;
+    padding: 0;
+}
+
+#menuSidebar {
+    background-color: white;
+    z-index: 3;
+    border-radius: 5px;
+    position: relative;
+}
+
+.custom-btn{
+    color: #321313;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover{
+    color: white;
+    background-color: #321313;
+}
+
+.hr-line {
+    border-top: 20px dotted #F4991A;
+}
+
+.food-variety {
+    color: white;
+    font-size: 50px;
+}
+
+.card{
+    border: 3px solid #321313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 16rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title, .card-text {
+    margin: 0.5rem 0;
+}
+
+.hide{
+    display: none;
+}
+
+.menu li{
+    padding-top: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .categories-btn {
+        display: block;
+        width: 80%;
+        margin: auto;
+        background-color: #321313;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .categories-btn:hover {
+        background-color: #FF8303;
+        color: white;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    #sidebar {
+    position: static;
+    height: auto;
+    }
+
+    #menuSidebar {
+    display: none;
+    }
+
+    #menuSidebar.show {
+    display: block;
+    }
+
+    main {
+    margin-left: 0;
+    padding-top: 1rem;
+    }
+}
+
+main {
+    z-index: 2;
+    padding-top: 1rem;
+}
+/* Menu Section - Main Ends */
+
+/* Testimonial Section Begins */
 .testimonials {
     text-align: center;
 }
 
-/* About Section */
-.about-main{
-    display: flex;
-    }
-    
-.about-content{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.review-btn {
+    text-decoration: none;
+    background-color: #FF8303;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
 }
 
-/* Contact Section */
+.review-btn:hover {
+    background-color: #F4991A;
+}
+/* Testimonial Section Ends */
+
+/* About Section Begins */
+.about-heading {
+    text-align: center;
+}
+
+.about-content{
+    text-align: center;
+}
+
+.about-img {
+    width: 95%;
+}
+/* About Section Ends */
+
+/* Contact Section Begins */
 .contact-heading {
     text-align: center;
 }
@@ -56,12 +273,24 @@
 .address-div {
     font-size: 20px;
 }
+/* Contact Section Ends */
 
-/* Footer Section */
+/* Footer Section Begins */
 footer {
-    background-color: #F0E3CA;
+    background-color: white;
+    color: black;
     text-align: center;
     padding-top: 10px;
     bottom: 0;
     width: 100%;
 }
+
+.designer-names {
+    text-decoration: none;
+    color: red;
+}
+
+.designer-names:hover {
+    color: #321313;
+}
+/* Footer Section Ends */
