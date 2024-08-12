@@ -275,6 +275,17 @@ main {
 }
 /* Contact Section Ends */
 
+/* Book Section Begins */
+
+.click-to-call { 
+    color: #007bff; 
+    background-color:white;
+    padding: 2px 3px;
+    border-radius: 5px;
+    text-decoration: none; }
+
+/* Book Section Ends */
+
 /* Footer Section Begins */
 footer {
     background-color: white;
